@@ -100,15 +100,15 @@ export function Apply() {
 }
 
 const faqs = [
-  ["Is this a course?", "No. It's an advisory: strategy, reviews and direction from Jordan, with training unlocked by phase."],
-  ["Is it done-for-you?", "No. We advise; you and your team execute. Phase 3 gets a team running it so you don't have to."],
+  ["Is this a course?", "No. We direct your actual content: we plan it with you, review it and tell you what to change. There's training too, unlocked by phase, but it's the smallest part."],
+  ["Is it done-for-you?", "No. We advise; you and your team execute. In Phase 3 we help you build the team that runs it, so you don't have to."],
   ["How much time will it take?", "More at the start while we build the foundation. The goal is a couple of hours a week once your team runs it, and filming can be batched weekly or monthly."],
-  ["I have no audience yet. Will it work?", "Yes. A fresh account is slower than one with a small following, but the 100-view jail isn't real. The content just isn't good enough yet."],
+  ["I have no audience yet. Will it work?", "Yes. A fresh account is slower than one with a small following, but the view jail isn't real. If you're stuck under 5,000 views, the content just isn't good enough yet."],
   ["Will this work in my industry?", "Every industry is the same industry: a human on the other side of the screen."],
   ["What if the algorithm changes?", "It doesn't. People's interests do, and we teach you to follow them."],
   ["How fast will I see results?", "First clients from social are possible within 30 days, and the aim is new leads every day by day 90. Accounts with an existing following move faster."],
   ["Which platforms?", "Short-form video first. Long-form YouTube is coming."],
-  ["Do I work with Jordan directly?", "Yes: onboarding, quarterly board meetings and monthly reviews. Founding members also get a direct line."],
+  ["Who will I work with?", "Our whole team: Jordan, our creative director, short-form specialist and funnel specialist."],
   ["Can my team join?", "Yes."],
   ["What does it cost?", "Pricing comes with your personal offer, after Jordan reviews your DM."],
   ["Is there a guarantee?", "Yes. Make your investment back within 90 days, or you stay in free until you do."],
@@ -135,10 +135,10 @@ export function FinalCta() {
     <section id="final-cta" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-24 text-center sm:py-32">
         <h2 className="font-serif text-6xl leading-[0.95] text-foreground sm:text-7xl md:text-8xl">
-          It only takes <Accent>one video.</Accent>
+          Your one video is coming. Build the engine first.
         </h2>
         <p className="mx-auto mt-6 max-w-reading text-lg text-muted-foreground">
-          {site.totalSeats} founding seats. I read every message myself. — Jordan
+          {site.totalSeats} founding seats. Jordan reviews every DM personally.
         </p>
         <div className="mt-10 flex justify-center"><DMButton size="lg" /></div>
       </div>

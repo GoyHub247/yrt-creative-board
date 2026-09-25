@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
 export const earningsText =
-  "Results shown are from profiles Jordan directed and are not typical. Your results depend on your offer, effort and starting point. No income is guaranteed beyond the terms of the 90-day guarantee.";
+  "Results shown are from profiles our team directed and are not typical. Your results depend on your offer, effort and starting point. No income is guaranteed beyond the terms of the 90-day guarantee.";
 
 const docs = {
   privacy: { title: "Privacy", body: "[Legal text to be supplied]" },

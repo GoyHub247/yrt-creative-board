@@ -59,7 +59,7 @@ export function CaseStudies() {
         {caseStudies.map((c, i) => <CaseCard key={i} c={c} />)}
       </div>
       <p className="mt-8 text-center text-sm text-muted-foreground">
-        Results from profiles Jordan directed. Not typical; see the earnings disclaimer.
+        Results from profiles our team directed. Not typical; see the earnings disclaimer.
       </p>
     </section>
   );
@@ -110,29 +110,39 @@ export function Receipts() {
   );
 }
 
-export function About() {
+const roles = [
+  ["Jordan", "Founder. Reviews every DM personally."],
+  ["Creative Director", "Positioning and what to post."],
+  ["Short-form Specialist", "Formats, hooks and what stops the scroll."],
+  ["Funnel Specialist", "Turning profile visits and DMs into clients."],
+];
+
+export function Team() {
   return (
-    <section id="about" className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
+    <section id="team" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+      <h2 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">Built from experience, not textbooks.</h2>
+      <p className="mt-6 max-w-reading text-lg leading-relaxed text-muted-foreground">
+        YRT Institute is built by the team behind 8 figures in client results and 20B+ views. Jordan founded it. The people who did the work are the ones who teach it, and they're absolute monsters at content.
+      </p>
+      <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
+        {roles.map(([t, d]) => (
+          <div key={t} className="rounded-xl border border-line bg-card p-5">
+            <h3 className="font-serif text-2xl text-foreground">{t}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{d}</p>
+          </div>
+        ))}
+      </div>
+      <div className="mt-10 grid grid-cols-1 items-center gap-8 rounded-xl border border-line bg-secondary p-6 sm:p-8 md:grid-cols-[240px_1fr]">
         {aboutPhoto ? (
-          <img src={aboutPhoto} alt="Jordan Chen" loading="lazy" className="aspect-[4/5] w-full rounded-xl object-cover" />
+          <img src={aboutPhoto} alt="Jordan Chen, founder of YRT Institute" loading="lazy" className="aspect-[4/5] w-full max-w-[240px] rounded-xl object-cover" />
         ) : (
-          <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full" />
+          <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full max-w-[240px]" />
         )}
         <div>
-          <h2 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">I used to chase views too.</h2>
-          <div className="mt-6 space-y-5 text-lg leading-relaxed text-muted-foreground">
-            <p>
-              I started a YouTube channel at 16 and got into online business at 17, after typing "how do you make money online" into Google. For years I chased views, because they were the only number I could see. Then I went viral in the wrong markets and made nothing, while videos with a few thousand views brought in more money than anything before.
-            </p>
-            <p>
-              Working as a sales rep for JK Molina, I closed a package for a client making $30k a month from 300 Twitter followers. That's when it clicked: likes ain't buys.
-            </p>
-            <p>
-              Since then I've spent years as a creative director behind other people's accounts, generating 8 figures for clients. YRT is how I teach it.
-            </p>
-          </div>
-          <p className="mt-8 font-serif text-3xl italic text-accent">Jordan Chen</p>
+          <p className="text-lg leading-relaxed text-foreground">
+            "I started online at 17 with a 'how do you make money online' search. For years I chased views, until I went viral in the wrong markets and made nothing, while small videos brought in serious money. That's when it clicked: likes ain't buys. Our agency has since generated 8 figures for clients. YRT is how we teach it."
+          </p>
+          <p className="mt-6 font-serif text-2xl italic text-accent">Jordan Chen, Founder</p>
         </div>
       </div>
     </section>
