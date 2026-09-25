@@ -61,29 +61,7 @@ export function WhatYouGet() {
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-reading">
-        <h3 className={T.label}>Also included</h3>
-        <ul className="mt-4 space-y-3">
-          {extras.map((t) => (
-            <li key={t} className="flex gap-3 text-foreground">
-              <Check className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />{t}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <p className="mx-auto mt-14 max-w-reading text-center text-lg text-muted-foreground">
-        {site.totalSeats} founding seats. Rolling entry: you start within about 7 days of being accepted.
-      </p>
-      <div className="mx-auto mt-8 max-w-2xl rounded-xl border-2 border-accent bg-card p-8 text-center">
-        <p className="font-serif text-2xl leading-snug text-foreground sm:text-3xl">
-          Make your investment back within 90 days, or you stay in for free until you do.
-        </p>
-      </div>
-      <p className="mt-4 text-center text-xs text-muted-foreground">
-        Revenue from everything we help you with counts. Full terms come with your offer.
-      </p>
-      <p className="mt-6 text-center text-sm text-muted-foreground">
+      <p className="mt-14 text-center text-sm text-muted-foreground">
         Pricing comes with your personal offer, after Jordan reviews your DM.
       </p>
       <div className="mt-8 flex justify-center"><DMButton size="lg" /></div>

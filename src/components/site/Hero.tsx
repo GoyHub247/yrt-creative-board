@@ -18,7 +18,7 @@ export function Hero() {
           YRT Creative Board · For founders doing at minimum $20k+/month
         </p>
 
-        <h1 className={`mt-6 max-w-4xl ${T.display}`}>
+        <h1 className={`mt-6 max-w-4xl ${T.display} leading-[1.08] sm:leading-[0.95]`}>
           Turn your personal brand into an <Accent>Evergreen Client Engine<sup className="align-top text-[0.35em]">™</sup>.</Accent>
         </h1>
 
