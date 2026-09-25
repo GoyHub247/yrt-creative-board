@@ -1,6 +1,6 @@
+import { T } from "./typography";
 import { DMButton } from "@/components/site/DMButton";
 
-const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
 const paragraphs = [
   "We've watched accounts go from 3,000 to 100,000 followers overnight, with more leads than the founder could answer.",
@@ -12,11 +12,11 @@ export function OneVideo() {
   return (
     <section id="one-video" className="scroll-mt-24 bg-background">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>It only takes one video.</h2>
+      <h2 className={T.sectionTitle}>It only takes <Accent>one video.</Accent></h2>
 
       <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
         {/* Left: copy */}
-        <div className="flex flex-col gap-5 text-lg leading-relaxed text-foreground">
+        <div className="flex flex-col gap-5 text-base leading-relaxed text-foreground">
           {paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
@@ -78,7 +78,7 @@ export function OneVideo() {
             <div className="flex aspect-video w-full max-w-md items-center justify-center rounded-xl border border-dashed border-line bg-secondary text-sm text-muted-foreground">
               [Overnight growth screenshot]
             </div>
-            <figcaption className="text-center text-sm text-muted-foreground">
+            <figcaption className={`text-center ${T.small}`}>
               [before] → [after] followers in [timeframe]
             </figcaption>
           </figure>

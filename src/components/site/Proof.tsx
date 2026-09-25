@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Accent } from "@/components/site/AccentText";
 import { caseStudies, type CaseStudy } from "@/data/caseStudies";
 import { receipts, aboutPhoto, type Receipt } from "@/data/receipts";
+import { T } from "./typography";
 
-const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 const Placeholder = ({ label, className = "" }: { label: string; className?: string }) => (
   <div className={`flex items-center justify-center rounded-lg border border-dashed border-border bg-secondary text-sm text-muted-foreground ${className}`}>
     {label}
@@ -21,7 +21,7 @@ function CaseCard({ c }: { c: CaseStudy }) {
         )}
       </div>
       {c.handle && <div className="mt-3 text-sm text-muted-foreground">{c.handle}</div>}
-      <h3 className="mt-3 font-serif text-2xl leading-snug text-foreground">{c.headline}</h3>
+      <h3 className={`mt-3 ${T.cardTitle}`}>{c.headline}</h3>
       {c.beforeAfter && <p className="mt-3 font-medium text-foreground">{c.beforeAfter}</p>}
       {c.timeline && <p className="mt-1 text-sm text-muted-foreground">{c.timeline}</p>}
       {c.how && <p className="mt-4 font-serif text-lg italic text-accent">{c.how}</p>}
@@ -42,7 +42,7 @@ function CaseCard({ c }: { c: CaseStudy }) {
           {open ? "Hide breakdown" : "See breakdown"}
         </button>
         {open && (
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.breakdown ?? "[Breakdown — to add]"}</p>
+          <p className={`mt-3 ${T.body} text-muted-foreground`}>{c.breakdown ?? "[Breakdown — to add]"}</p>
         )}
       </div>
     </div>
@@ -53,7 +53,7 @@ export function CaseStudies() {
   return (
     <section id="case-studies" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>
+      <h2 className={T.sectionTitle}>
         Different industries. <Accent>Same human on the other side of the screen.</Accent>
       </h2>
       <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -81,7 +81,7 @@ export function Receipts() {
   return (
     <section id="receipts" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 pb-20 sm:pb-28">
-        <h2 className={H2}>Likes ain't buys. <Accent>These are buys.</Accent></h2>
+        <h2 className={T.sectionTitle}>Likes ain't buys. <Accent>These are buys.</Accent></h2>
         <p className="mx-auto mt-5 max-w-reading text-center text-muted-foreground">
           Most of our clients don't want competitors seeing their numbers, so names are blurred.
         </p>
@@ -116,8 +116,8 @@ export function Team() {
   return (
     <section id="team" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">Built from experience, not textbooks.</h2>
-      <p className="mt-6 max-w-reading text-lg leading-relaxed text-muted-foreground">
+      <h2 className={T.sectionTitle}>Built from experience, <Accent>not textbooks.</Accent></h2>
+      <p className={T.lead}>
         Our entire philosophy is built from years of testing and iterating. You'll get access to a team that's at the frontier of content creation. They're absolute monsters at creating content that gets you paid. The creative director, the short form specialist, the funnel expert, the entire crew that's behind 8 figures in client results and over 20B+ views, all are on the board.
       </p>
       <div className="mt-10 grid grid-cols-1 items-center gap-8 rounded-xl border border-line bg-card p-6 sm:p-8 md:grid-cols-[240px_1fr]">
@@ -127,7 +127,7 @@ export function Team() {
           <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full max-w-[240px] !bg-card" />
         )}
         <div>
-          <div className="space-y-4 text-lg leading-relaxed text-foreground">
+          <div className="space-y-4 text-base leading-relaxed text-foreground">
             <p>"For years we've helped many businesses in various industries succeed on social media by taking over their content department. However once the partnership ended, the content systems always fell apart.</p>
             <p>To help even more founders and their teams, we created YRT Creative Board, a advisory program where businesses get shown how to fish instead of just being given the result.</p>
             <p>We help you and your people build the system and train up your team to become just as good or even better as we are."</p>
