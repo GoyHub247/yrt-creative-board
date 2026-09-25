@@ -56,8 +56,8 @@ function Index() {
         <CaseStudies />
         <Receipts />
         <Team />
-        <Offer />
         <Fit />
+        <Offer />
         <Apply />
         <Faq />
         <FinalCta />
