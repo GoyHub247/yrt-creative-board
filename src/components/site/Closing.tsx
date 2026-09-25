@@ -7,32 +7,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
-const perks = [
-  ["Onboarding call", "Set expectations and build your first quarterly strategy."],
-  ["Quarterly board meetings", "1:1 with Jordan to set goals and check progress."],
-  ["Monthly board reviews", "A recorded audit of your content and profiles."],
-  ["The Boardroom", "A group chat where Jordan roasts content and profiles and gives honest feedback."],
-  ["Ideation support", "Ideas, plus the latest top-performing videos to adapt to your business."],
-  ["Training by phase", "Unlocked as you progress, so you never drown in information."],
-  ["Direct line to Jordan", "Founding members only."],
-  ["Your team can join", "Bring the people who'll run it with you."],
-];
-
 export function Offer() {
   return (
     <section id="offer" className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>Your seat on the <Accent>Creative Board.</Accent></h2>
+      <h2 className={H2}>Your seat on the Creative Board.</h2>
       <p className="mx-auto mt-5 max-w-reading text-center text-lg text-muted-foreground">
         {site.totalSeats} founding seats. Rolling entry: you start within about 7 days of being accepted.
       </p>
-      <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-        {perks.map(([t, d]) => (
-          <div key={t} className="rounded-xl border border-line bg-card p-4 sm:p-5">
-            <h3 className="font-semibold text-foreground">{t}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{d}</p>
-          </div>
-        ))}
-      </div>
       <div className="mx-auto mt-12 max-w-2xl rounded-xl border-2 border-accent bg-card p-8 text-center">
         <p className="font-serif text-2xl leading-snug text-foreground sm:text-3xl">
           Make your investment back within 90 days, or you stay in free until you do.
