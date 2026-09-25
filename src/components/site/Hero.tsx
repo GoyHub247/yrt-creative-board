@@ -1,6 +1,6 @@
 import { site } from "@/config/site";
 import { DMButton } from "@/components/site/DMButton";
-import { AccentText, Accent } from "@/components/site/AccentText";
+import { AccentText } from "@/components/site/AccentText";
 
 export function Hero() {
   return (
