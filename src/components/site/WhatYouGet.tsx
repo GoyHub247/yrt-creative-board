@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { DMButton } from "@/components/site/DMButton";
+import { site } from "@/config/site";
 
 const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
@@ -19,7 +20,7 @@ const playbooks = [
 const extras = [
   "An onboarding call to set your goals and first strategy",
   "Your team can join",
-  "Direct access to the team that has been",
+  "Direct access to the team behind 8 figures in client results.",
 ];
 
 export function WhatYouGet() {
@@ -70,7 +71,21 @@ export function WhatYouGet() {
         </ul>
       </div>
 
-      <div className="mt-12 flex justify-center"><DMButton size="lg" /></div>
+      <p className="mx-auto mt-14 max-w-reading text-center text-lg text-muted-foreground">
+        {site.totalSeats} founding seats. Rolling entry: you start within about 7 days of being accepted.
+      </p>
+      <div className="mx-auto mt-8 max-w-2xl rounded-xl border-2 border-accent bg-card p-8 text-center">
+        <p className="font-serif text-2xl leading-snug text-foreground sm:text-3xl">
+          Make your investment back within 90 days, or you stay in free until you do.
+        </p>
+      </div>
+      <p className="mt-4 text-center text-xs text-muted-foreground">
+        Revenue from everything we help you with counts. Full terms come with your offer.
+      </p>
+      <p className="mt-6 text-center text-sm text-muted-foreground">
+        Pricing comes with your personal offer, after Jordan reviews your DM.
+      </p>
+      <div className="mt-8 flex justify-center"><DMButton size="lg" /></div>
     </div>
     </section>
   );

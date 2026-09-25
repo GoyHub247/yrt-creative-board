@@ -114,13 +114,13 @@ export function Receipts() {
 
 export function Team() {
   return (
-    <section id="team" className="bg-background">
+    <section id="team" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">Built from experience, not textbooks.</h2>
       <p className="mt-6 max-w-reading text-lg leading-relaxed text-muted-foreground">
         Our entire philosophy is built from years of testing and iterating. You'll get access to a team that's at the frontier of content creation. They're absolute monsters at creating content that gets you paid. The creative director, the short form specialist, the funnel expert, the entire crew that's behind 8 figures in client results and over 20B+ views, all are on the board.
       </p>
-      <div className="mt-10 grid grid-cols-1 items-center gap-8 rounded-xl border border-line bg-secondary p-6 sm:p-8 md:grid-cols-[240px_1fr]">
+      <div className="mt-10 grid grid-cols-1 items-center gap-8 rounded-xl border border-line bg-card p-6 sm:p-8 md:grid-cols-[240px_1fr]">
         {aboutPhoto ? (
           <img src={aboutPhoto} alt="Jordan Chen, founder of YRT Institute" loading="lazy" className="aspect-[4/5] w-full max-w-[240px] rounded-xl object-cover" />
         ) : (
