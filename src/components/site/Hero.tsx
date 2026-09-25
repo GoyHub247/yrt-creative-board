@@ -56,7 +56,7 @@ export function Hero() {
             ))}
           </div>
           <p className="mt-7 text-center text-sm text-muted-foreground">
-            Views are the number we care about the least. It's a side effect. Buyers are the point.
+            Views and likes are the numbers we care about the least. It's a side effect. We optimise for buyers.
           </p>
         </div>
       </div>

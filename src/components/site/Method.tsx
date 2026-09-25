@@ -5,14 +5,14 @@ import { T } from "./typography";
 
 
 const phases = [
-  { n: 1, name: "Foundation", title: "Build the engine.", what: "This phase is all about strategy, positioning and setting up the foundation to scale.", move: "You've landed your first clients from social, possible within 30 days." },
+  { n: 1, name: "Foundation", title: "Build the engine.", what: "This phase is all about strategy, positioning and setting up the foundation to scale.", move: "You have a clear foundation with a great strategy and your first clients from socials." },
   { n: 2, name: "Inbound", title: "Start it up.", what: "We find your format and filming schedule, and the leads start flooding in.", move: "New leads arrive from social every day, the aim by day 90." },
-  { n: 3, name: "Leverage", title: "Hand over the keys.", what: "Your team runs and maintains the engine. You're the face, not the mechanic.", move: "It takes you a couple of hours a week." },
+  { n: 3, name: "Leverage", title: "Hand over the keys.", what: "Your team runs and maintains the engine. You're the face, not the mechanic.", move: "It only takes you a couple of hours a month to create all your content." },
 ];
 
 const outcomes = [
   "Inbound leads in your DMs every day",
-  "No cold outreach",
+  "No cold outreach, no ads",
   "No paying for every lead",
   "A couple of hours a month of your time",
   "A compounding asset: every video builds upon the last",
@@ -24,7 +24,7 @@ export function HowItWorks() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>How the Creative Board <Accent>works.</Accent></h2>
       <p className={T.lead}>
-        Our team of experienced operators help you and your people to build an evergreen content machine, in three phases. We advise and strategise, your team executes.
+        Everything a modern digital founder needs to scale his socials like a professional.
       </p>
 
       <div className="mx-auto mt-12 max-w-4xl">

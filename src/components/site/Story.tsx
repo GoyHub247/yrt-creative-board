@@ -4,13 +4,13 @@ import { Accent } from "@/components/site/AccentText";
 
 export function Why() {
   const cards = [
-    ["The Clipper", "You overpay for clipping campaigns that are full of low quality effort kids trying to get views at any cost (which don't convert). All volume, no real tangible results."],
+    ["The Clipper", "You overpay for clipping campaigns that are full of low quality effort kids trying to get views at any cost (which don't convert). Overpriced volume, no real tangible results."],
     ["The Lifestyle Actor", "Portrays a life on social media they don't even want, because they think it's what gets them views and sales. It's expensive to compete and soul-crushing to live only for others' entertainment."],
     ["The Viral Chaser", "Only tries to go viral thinking it's what's going to get them results, not knowing that there are brands out there with 10,000 followers making millions in profit per month."],
     ["The CAC Optimizer", "Reliant fully on paid advertising to acquire new clients, instead of building an engine that doesn't charge per lead."],
   ];
   const beliefs = [
-    ["Likes ain't buys.", "20 billion views taught us that views are a side effect. We build content for the few people who will actually buy."],
+    ["Likes ain't buys.", "20 billion views taught us that views are a side effect. We build content for people who will actually buy."],
     ["Every industry is the same industry.", "Agencies, coaching, law firms, local businesses, consultants: it doesn't matter because there's always a human on the other side of the screen. Human nature and psychology doesn't change."],
     ["It's not the algorithm. It's the video.", "The algorithm doesn't change; people's interests do. In our experience, 95% of the time an underperforming video is a video problem."],
   ];
@@ -22,11 +22,11 @@ export function Why() {
           You're great at running your business. <Accent>Your content doesn't show it yet.</Accent>
         </h2>
         <p className={T.lead}>
-          Stuck under 5,000 views. Views that never turn into DMs. Content that eats your week.
+          Stuck under 5,000 views. Views that never turn into DMs. Content creation processes that devour your time.
         </p>
 
         <p className={`mt-14 ${T.label}`}>
-          You've probably tried one of these
+          YOU'VE PROBABLY TRIED ONE OF THESE (AS THESE ARE THE FOUNDERS WE MOST WORK WITH)
         </p>
         <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
           {cards.map(([name, line]) => (
