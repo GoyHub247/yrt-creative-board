@@ -1,24 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import type { CSSProperties } from "react";
+import { site } from "@/config/site";
+import { TopBar } from "@/components/site/TopBar";
+import { MobileBar } from "@/components/site/MobileBar";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "YRT Creative Board — YRT Institute" },
+      { name: "description", content: "A creative advisory by YRT Institute. Likes ain't buys." },
+      { property: "og:title", content: "YRT Creative Board — YRT Institute" },
+      { property: "og:description", content: "A creative advisory by YRT Institute. Likes ain't buys." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
+const sections = [
+  "hero", "numbers", "problem", "tried", "beliefs", "method", "scorecard",
+  "case-studies", "receipts", "about", "offer", "fit", "how-it-works", "faq", "final-cta",
+];
+
 function Index() {
   return (
     <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
+      className="min-h-screen bg-background pb-36 md:pb-0"
+      style={{ "--accent": site.accentColor } as CSSProperties}
     >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+      <TopBar />
+      <main>
+        {sections.map((id) => (
+          <section key={id} id={id} className="mx-auto max-w-content px-6 py-16">
+            <div className="rounded-xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">
+              [{id}]
+            </div>
+          </section>
+        ))}
+      </main>
+      <footer id="footer" className="mx-auto max-w-content px-6 py-16">
+        <div className="rounded-xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">
+          [footer]
+        </div>
+      </footer>
+      <MobileBar />
     </div>
   );
 }
