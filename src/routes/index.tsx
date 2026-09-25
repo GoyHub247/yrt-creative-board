@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 import { site } from "@/config/site";
 import { TopBar } from "@/components/site/TopBar";
 import { MobileBar } from "@/components/site/MobileBar";
+import { Hero, Numbers } from "@/components/site/Hero";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,7 +20,7 @@ export const Route = createFileRoute("/")({
 });
 
 const sections = [
-  "hero", "numbers", "problem", "tried", "beliefs", "method", "scorecard",
+  "problem", "tried", "beliefs", "method", "scorecard",
   "case-studies", "receipts", "about", "offer", "fit", "how-it-works", "faq", "final-cta",
 ];
 
@@ -31,6 +32,8 @@ function Index() {
     >
       <TopBar />
       <main>
+        <Hero />
+        <Numbers />
         {sections.map((id) => (
           <section key={id} id={id} className="mx-auto max-w-content px-6 py-16">
             <div className="rounded-xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">
