@@ -1,3 +1,4 @@
+import { Accent } from "./AccentText";
 import { Check } from "lucide-react";
 import { DMButton } from "@/components/site/DMButton";
 import { site } from "@/config/site";

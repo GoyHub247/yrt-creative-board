@@ -1,3 +1,4 @@
+import { Accent } from "./AccentText";
 import { DMButton } from "@/components/site/DMButton";
 import { VideoPlayer } from "@/components/site/VideoPlayer";
 import { T } from "./typography";
