@@ -5,8 +5,8 @@ import { LegalDialogs } from "@/components/site/LegalDialogs";
 import { site } from "@/config/site";
 import { TopBar } from "@/components/site/TopBar";
 import { MobileBar } from "@/components/site/MobileBar";
-import { Hero, Numbers } from "@/components/site/Hero";
-import { Problem, Tried, Beliefs } from "@/components/site/Story";
+import { Hero } from "@/components/site/Hero";
+import { Why } from "@/components/site/Story";
 import { HowItWorks } from "@/components/site/Method";
 import { WhatYouGet } from "@/components/site/WhatYouGet";
 import { CaseStudies, Receipts, Team } from "@/components/site/Proof";
@@ -47,14 +47,11 @@ function Index() {
       <main>
         <Hero />
         <HowItWorks />
-        <WhatYouGet />
-        <Numbers />
-        <Problem />
-        <Tried />
-        <Beliefs />
+        <Why />
         <OneVideo />
         <CaseStudies />
         <Receipts />
+        <WhatYouGet />
         <Team />
         <Fit />
         <Offer />

@@ -1,6 +1,11 @@
 import { site } from "@/config/site";
 import { DMButton } from "@/components/site/DMButton";
-import { AccentText } from "@/components/site/AccentText";
+
+const figures = [
+  { value: "8 figures", label: "revenue generated for clients." },
+  { value: "30,000+", label: "qualified leads generated." },
+  { value: "20B+", label: "total views, with single videos past 100M." },
+];
 
 export function Hero() {
   return (
@@ -38,41 +43,22 @@ export function Hero() {
         <p className="mt-5 max-w-reading text-sm text-muted-foreground">
           {site.totalSeats} founding seats. Every application is personally reviewed by Jordan.
         </p>
+
+        <div className="mt-10 w-full border-t border-line pt-8 sm:mt-12">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
+            {figures.map((figure) => (
+              <div key={figure.value} className="text-center">
+                <div className="font-serif text-3xl text-foreground sm:text-4xl">{figure.value}</div>
+                <div className="mt-1 text-sm text-muted-foreground">{figure.label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="mt-7 text-center text-sm text-muted-foreground">
+            Views are the number we care about the least. It's a side effect. Buyers are the point.
+          </p>
+        </div>
       </div>
     </div>
-    </section>
-  );
-}
-
-export function Numbers() {
-  const figures = [
-    { value: "8 figures", label: "revenue generated for clients." },
-    { value: "30,000+", label: "qualified leads generated." },
-    {
-      value: "20B+",
-      label: (
-        <>
-          total views, with single videos past 100M.
-        </>
-      ),
-    },
-  ];
-
-  return (
-    <section id="numbers" className="bg-secondary">
-      <div className="mx-auto max-w-content px-6 py-14 sm:py-16">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
-          {figures.map((f) => (
-            <div key={f.value} className="text-center">
-              <div className="font-serif text-5xl text-foreground sm:text-6xl">{f.value}</div>
-              <div className="mt-3 text-sm text-muted-foreground sm:text-base">{f.label}</div>
-            </div>
-          ))}
-        </div>
-        <p className="mt-12 text-center text-sm text-muted-foreground sm:text-base">
-          <AccentText>Views are the number we care about the least. It's a side effect. Buyers are the point.</AccentText>
-        </p>
-      </div>
     </section>
   );
 }
