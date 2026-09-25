@@ -45,8 +45,8 @@ export function Hero() {
 export function Numbers() {
   const figures = [
     { value: "8 figures", label: "generated for clients" },
-    { value: "100M+", label: "views on a single video" },
-    { value: "20B+", label: <>total views. <Accent>The number we care about least.</Accent></> },
+    { value: "30,000+", label: "leads generated" },
+    { value: "20B+", label: <>total views, with single videos past 100M. <Accent>The number we care about least.</Accent></> },
   ];
 
   return (

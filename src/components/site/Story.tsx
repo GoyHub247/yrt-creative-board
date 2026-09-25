@@ -4,7 +4,7 @@ const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-c
 
 export function Problem() {
   const items = [
-    "Stuck at 100–300 views, however often you post.",
+    "Stuck under 5,000 views, however often you post.",
     "Views that never turn into a single DM.",
     "Content eating the hours you should spend running the business.",
     "Starting strong, then falling off after a few weeks.",
@@ -31,7 +31,7 @@ export function Tried() {
     ["The Clipper", "Chops long-form into dozens of clips and hopes volume does the work."],
     ["The Lifestyle Actor", "Films a life they don't even want, because they think that's what gets views."],
     ["The Viral Chaser", "Goes viral without knowing who the views are for, or what they should buy."],
-    ["The Ad Payer", "Buys every lead and watches acquisition costs climb."],
+    ["The CAC Optimizer", "Spends every month shaving a few dollars off the cost per client, instead of building an engine that doesn't charge per lead."],
   ];
   return (
     <section id="tried" className="border-y border-line bg-secondary">
