@@ -11,7 +11,7 @@ export function Hero() {
         </p>
 
         <h1 className="mt-6 max-w-4xl font-serif text-6xl leading-[0.95] text-foreground sm:text-7xl md:text-8xl">
-          Turn your personal brand into a client engine.
+          Turn your personal brand into an Evergreen Client Engine™.
         </h1>
 
         <p className="mt-7 max-w-reading text-lg leading-relaxed text-muted-foreground sm:text-xl">
