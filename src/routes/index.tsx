@@ -7,9 +7,9 @@ import { TopBar } from "@/components/site/TopBar";
 import { MobileBar } from "@/components/site/MobileBar";
 import { Hero, Numbers } from "@/components/site/Hero";
 import { Problem, Tried, Beliefs } from "@/components/site/Story";
-import { Method } from "@/components/site/Method";
+import { HowItWorks } from "@/components/site/Method";
 import { CaseStudies, Receipts, About } from "@/components/site/Proof";
-import { Offer, Fit, HowItWorks, Faq, FinalCta, Footer } from "@/components/site/Closing";
+import { Offer, Fit, Apply, Faq, FinalCta, Footer } from "@/components/site/Closing";
 
 const TITLE = "YRT Creative Board | Likes ain't buys";
 const DESC = "A creative advisory for established online businesses. Turn your expertise into content that brings in buyers.";
@@ -44,17 +44,17 @@ function Index() {
       <TopBar />
       <main>
         <Hero />
+        <HowItWorks />
         <Numbers />
         <Problem />
         <Tried />
         <Beliefs />
-        <Method />
         <CaseStudies />
         <Receipts />
         <About />
         <Offer />
         <Fit />
-        <HowItWorks />
+        <Apply />
         <Faq />
         <FinalCta />
       </main>
