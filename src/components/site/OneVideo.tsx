@@ -4,9 +4,9 @@ import { DMButton } from "@/components/site/DMButton";
 
 
 const paragraphs = [
-  "We've watched accounts go from 3,000 to 100,000 followers overnight, with more leads than the founder could answer.",
+  "We've watched our clients' accounts go from 3,000 to 100,000 followers overnight, with more leads than the founder could answer.",
   "After your first successful video: testing new ideas becomes faster, converting leads into paying clients becomes smoother and your revenue scales harder than ever before.",
-  "We make sure this first One Banger arrives fast and that you are ready to actually convert them when the time comes.",
+  "We make sure this first Catalyst Banger™ arrives fast and that you are ready to actually convert them when the time comes.",
 ];
 
 export function OneVideo() {

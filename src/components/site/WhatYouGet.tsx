@@ -7,20 +7,20 @@ import { T } from "./typography";
 
 const rhythm: { label: string; text: string; note?: string }[] = [
   { label: "Every quarter", text: "A strategy session with our team to set your content goals and the plan for the next 90 days." },
-  { label: "Every month", text: "A 1:1 review call with our team: what's working, what isn't, what changes." },
-  { label: "Every day", text: "The Boardroom: every founder on the board in one group, working toward the same goal. Wins, honest feedback, hot seats, and borrowing what's working for others." },
+  { label: "Every month", text: "A 1:1 review with our team: what's working, what isn't, what changes." },
+  { label: "Every day", text: "The Creative Boardroom: every founder on the board in one group, working toward the same goal. Wins, honest feedback, hot seats, and borrowing what's working for others." },
 ];
 
 const playbooks = [
   ["Brand & Positioning", "Foundation", "Becoming the most trusted authority figure in your space. Building a genuine brand that attracts and converts leads like crazy whilst also opening up the door for incredible partnerships."],
-  ["Inbound Leads Engine", "Inbound", "The entire content cycle: ideation, filming, editing and posting like a professional, not an at-home amateur, on a schedule that fits you and your lifestyle."],
+  ["Attention & Creation", "Inbound", "The entire content cycle: ideation, filming, editing and posting like a professional, not an at-home amateur, on a schedule that fits you and your lifestyle."],
   ["Conversion", "Foundation", "Turning views, profile visits and DMs into clients using the same systems that have generated over 30,000 leads for others."],
   ["People & Systems", "Leverage", "Hiring, training and managing the team that runs the engine so you can just be the face, not the operator."],
 ];
 
 const extras = [
-  "An onboarding call to set your goals and first strategy",
-  "Your team can join",
+  "Templates and software we use in our own company to stay at the frontier of short form content.",
+  "You can join together with your team so they can be trained from day.",
   "Direct access to the team behind 8 figures in client results.",
 ];
 
@@ -77,7 +77,7 @@ export function WhatYouGet() {
       </p>
       <div className="mx-auto mt-8 max-w-2xl rounded-xl border-2 border-accent bg-card p-8 text-center">
         <p className="font-serif text-2xl leading-snug text-foreground sm:text-3xl">
-          Make your investment back within 90 days, or you stay in free until you do.
+          Make your investment back within 90 days, or you stay in for free until you do.
         </p>
       </div>
       <p className="mt-4 text-center text-xs text-muted-foreground">

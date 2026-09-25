@@ -54,7 +54,7 @@ export function CaseStudies() {
     <section id="case-studies" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>
-        Different industries. <Accent>Same human on the other side of the screen.</Accent>
+        Different industries. <Accent>Same playbook.</Accent>
       </h2>
       <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
         {caseStudies.map((c, i) => <CaseCard key={i} c={c} />)}
