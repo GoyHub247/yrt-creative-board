@@ -15,7 +15,8 @@ export function Hero() {
         </h1>
 
         <p className="mt-7 max-w-reading text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          A well-oiled content machine that brings you leads every day, so you can stop cold outreach and stop paying for every client. We build it with you in phases, until your team runs it in a couple of hours a week.
+          Build a well-oiled organic content machine that brings you leads every day, so you can stop cold outreach and
+          stop paying to acquire every client.
         </p>
 
         <div className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:items-center">
@@ -46,7 +47,14 @@ export function Numbers() {
   const figures = [
     { value: "8 figures", label: "generated for clients" },
     { value: "30,000+", label: "leads generated" },
-    { value: "20B+", label: <>total views, with single videos past 100M. <Accent>The number we care about least.</Accent></> },
+    {
+      value: "20B+",
+      label: (
+        <>
+          total views, with single videos past 100M. <Accent>The number we care about least.</Accent>
+        </>
+      ),
+    },
   ];
 
   return (
@@ -55,12 +63,8 @@ export function Numbers() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
           {figures.map((f) => (
             <div key={f.value} className="text-center">
-              <div className="font-serif text-5xl text-foreground sm:text-6xl">
-                {f.value}
-              </div>
-              <div className="mt-3 text-sm text-muted-foreground sm:text-base">
-                {f.label}
-              </div>
+              <div className="font-serif text-5xl text-foreground sm:text-6xl">{f.value}</div>
+              <div className="mt-3 text-sm text-muted-foreground sm:text-base">{f.label}</div>
             </div>
           ))}
         </div>
