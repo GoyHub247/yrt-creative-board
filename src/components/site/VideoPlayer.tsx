@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
  */
 export function VideoPlayer() {
   const [muted, setMuted] = useState(true);
-  const url = site.videoEmbedUrl;
+  const url: string = site.videoEmbedUrl;
 
   if (!url) {
     return (
