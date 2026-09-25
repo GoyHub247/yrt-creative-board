@@ -7,6 +7,7 @@ export const site = {
   seatsLeft: 10,
   // Empty shows a "Video coming soon" placeholder.
   videoEmbedUrl: "",
+  youtubeUrl: "[YouTube URL]",
   // Temporary accent colour.
   accentColor: "#2F4A3A",
 } as const;
