@@ -23,9 +23,9 @@ const no = [
 ];
 
 const steps = [
-  `DM '${site.dmKeyword}' to @${site.instagramHandle} with what you sell, your monthly revenue, where your clients come from now, and your biggest content problem.`,
+  `DM '${site.dmKeyword}' to @${site.instagramHandle} on Instagram.`,
   "Jordan reads every message himself and replies within 24–48 hours.",
-  "If it's a fit, you get your personal offer: the full breakdown, price, plus a short video walking through it for your business.",
+  "If it's a fit, you get an offer sent including full breakdown of the process, pricing, next steps, etc.",
   "You start within about 7 days.",
 ];
 
@@ -118,11 +118,8 @@ export function FinalCta() {
     <section id="final-cta" className="surface-dark">
       <div className="mx-auto max-w-content px-6 py-20 text-center sm:py-28">
         <h2 className={T.displayClose}>
-          Your One Catalyst Banger is coming. <Accent>Build the engine first.</Accent>
+          Your Catalyst Banger™ is waiting for you. Let's go.
         </h2>
-        <p className={T.lead}>
-          {site.totalSeats} founding seats. Jordan reviews every DM personally.
-        </p>
         <div className="mt-10 flex justify-center"><DMButton size="lg" /></div>
       </div>
     </section>
