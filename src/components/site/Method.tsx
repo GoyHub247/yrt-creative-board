@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { track } from "@/lib/analytics";
 import { Accent } from "@/components/site/AccentText";
 import { DMButton } from "@/components/site/DMButton";
 
@@ -50,6 +51,7 @@ type Key = (typeof questions)[number]["key"];
 
 export function Scorecard() {
   const [v, setV] = useState<Record<Key, number>>({ reach: 5, conversion: 5, time: 5, consistency: 5, authority: 5 });
+  const used = useRef(false);
   const total = Object.values(v).reduce((a, b) => a + b, 0);
 
   let title: string, text: string, cta = true;
@@ -91,7 +93,12 @@ export function Scorecard() {
                   max={10}
                   step={1}
                   value={v[q.key]}
-                  onChange={(e) => setV((s) => ({ ...s, [q.key]: Number(e.target.value) }))}
+                  onChange={(e) => {
+                    if (!used.current) { used.current = true; track("scorecard_used"); }
+                    const n = Number(e.target.value);
+                    setV((s) => ({ ...s, [q.key]: n }));
+                  }}
+                  aria-valuetext={`${v[q.key]} out of 10`}
                   className="mt-4 w-full"
                   style={{ accentColor: "var(--accent)" }}
                 />

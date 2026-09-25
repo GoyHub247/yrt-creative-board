@@ -1,8 +1,8 @@
-import { Link } from "@tanstack/react-router";
 import { Check, X } from "lucide-react";
 import { site } from "@/config/site";
 import { Accent } from "@/components/site/AccentText";
 import { DMButton } from "@/components/site/DMButton";
+import { earningsText, openLegal, type LegalKey } from "@/components/site/LegalDialogs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
@@ -175,14 +175,12 @@ export function Footer() {
           <nav className="flex flex-wrap gap-x-5 gap-y-2">
             <a className={ext} href={`https://instagram.com/${site.instagramHandle}`} target="_blank" rel="noopener noreferrer">Instagram</a>
             <a className={ext} href={site.youtubeUrl} target="_blank" rel="noopener noreferrer">YouTube</a>
-            <Link className={ext} to="/privacy">Privacy</Link>
-            <Link className={ext} to="/terms">Terms</Link>
-            <Link className={ext} to="/earnings-disclaimer">Earnings disclaimer</Link>
+            <a className={ext} href="#privacy" onClick={(e) => { e.preventDefault(); openLegal("privacy" as LegalKey); }}>Privacy</a>
+            <a className={ext} href="#terms" onClick={(e) => { e.preventDefault(); openLegal("terms" as LegalKey); }}>Terms</a>
+            <a className={ext} href="#earnings-disclaimer" onClick={(e) => { e.preventDefault(); openLegal("earnings-disclaimer" as LegalKey); }}>Earnings disclaimer</a>
           </nav>
         </div>
-        <p className="mt-8 max-w-3xl text-xs leading-relaxed">
-          Results shown are from profiles Jordan directed and are not typical. Your results depend on your offer, effort and starting point. No income is guaranteed beyond the terms of the 90-day guarantee.
-        </p>
+        <p className="mt-8 max-w-3xl text-xs leading-relaxed">{earningsText}</p>
         <p className="mt-4 text-xs">© {new Date().getFullYear()} YRT Institute.</p>
       </div>
     </footer>
