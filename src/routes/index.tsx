@@ -6,6 +6,7 @@ import { MobileBar } from "@/components/site/MobileBar";
 import { Hero, Numbers } from "@/components/site/Hero";
 import { Problem, Tried, Beliefs } from "@/components/site/Story";
 import { Method, Scorecard } from "@/components/site/Method";
+import { CaseStudies, Receipts, About } from "@/components/site/Proof";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,7 +24,7 @@ export const Route = createFileRoute("/")({
 
 const sections = [
   
-  "case-studies", "receipts", "about", "offer", "fit", "how-it-works", "faq", "final-cta",
+  "offer", "fit", "how-it-works", "faq", "final-cta",
 ];
 
 function Index() {
@@ -41,6 +42,9 @@ function Index() {
         <Beliefs />
         <Method />
         <Scorecard />
+        <CaseStudies />
+        <Receipts />
+        <About />
         {sections.map((id) => (
           <section key={id} id={id} className="mx-auto max-w-content px-6 py-16">
             <div className="rounded-xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">
