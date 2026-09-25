@@ -19,7 +19,7 @@ export function Hero() {
         </p>
 
         <h1 className={`mt-6 max-w-4xl ${T.display} leading-[1.08] sm:leading-[0.95]`}>
-          Turn your personal brand into an <Accent>Evergreen Client Engine<sup className="align-top text-[0.35em]">™</sup>.</Accent>
+          Turn your personal brand into an <Accent>Evergreen Client Engine.</Accent>
         </h1>
 
         <p className="mt-7 max-w-reading text-lg leading-relaxed text-muted-foreground">
