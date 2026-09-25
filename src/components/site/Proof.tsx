@@ -88,7 +88,7 @@ export function Receipts() {
         <div className="mt-12 columns-2 gap-4 md:columns-3 lg:columns-4">
           {receipts.length === 0
             ? placeholderHeights.map((h, i) => (
-                <Placeholder key={i} label="[Receipt]" className={`mb-4 break-inside-avoid bg-card ${h}`} />
+                <Placeholder key={i} label="[Receipt]" className={`mb-4 break-inside-avoid !bg-card ${h}`} />
               ))
             : receipts.map((r, i) => (
                 <button key={i} type="button" onClick={() => setActive(r)} className="mb-4 block w-full break-inside-avoid text-left">
@@ -124,7 +124,7 @@ export function Team() {
         {aboutPhoto ? (
           <img src={aboutPhoto} alt="Jordan Chen, founder of YRT Institute" loading="lazy" className="aspect-[4/5] w-full max-w-[240px] rounded-xl object-cover" />
         ) : (
-          <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full max-w-[240px]" />
+          <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full max-w-[240px] !bg-card" />
         )}
         <div>
           <div className="space-y-4 text-lg leading-relaxed text-foreground">

@@ -71,6 +71,7 @@
   --line: #E7E2D8;
   --accent: #2F4A3A;
   --accent-foreground: #F7F4EE;
+  --accent-on-dark: #9DB8A6;
 
   --background: var(--paper);
   --foreground: var(--ink);
@@ -120,3 +121,24 @@
   html { overflow-x: clip; }
   h1, h2, h3 { font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.01em; }
 }
+
+/* Dark section surface: remaps tokens so children adapt automatically. */
+.surface-dark {
+  --background: #141414;
+  --foreground: #F7F4EE;
+  --muted-foreground: #A8A298;
+  --line: #2C2C2C;
+  --border: #2C2C2C;
+  --card: #1E1E1E;
+  --secondary: #1E1E1E;
+  --accent: var(--accent-on-dark);
+  --accent-foreground: #141414;
+  --ring: var(--accent-on-dark);
+  background-color: #141414;
+  color: #F7F4EE;
+}
+.surface-dark .dm-button {
+  background-color: #F7F4EE;
+  color: #141414;
+}
+.surface-dark .dm-button:hover { opacity: 0.88; }

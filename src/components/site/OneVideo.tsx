@@ -75,7 +75,7 @@ export function OneVideo() {
 
           {/* Screenshot slot */}
           <figure className="flex flex-col items-center gap-3">
-            <div className="flex aspect-video w-full max-w-md items-center justify-center rounded-xl border border-dashed border-line bg-card text-sm text-muted-foreground">
+            <div className="flex aspect-video w-full max-w-md items-center justify-center rounded-xl border border-dashed border-line bg-secondary text-sm text-muted-foreground">
               [Overnight growth screenshot]
             </div>
             <figcaption className="text-center text-sm text-muted-foreground">
