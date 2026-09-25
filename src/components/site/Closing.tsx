@@ -101,7 +101,7 @@ const steps = [
   "You start within about 7 days.",
 ];
 
-export function HowItWorks() {
+export function Apply() {
   return (
     <section id="apply" className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>How to apply.</h2>
