@@ -7,7 +7,7 @@ import { TopBar } from "@/components/site/TopBar";
 import { MobileBar } from "@/components/site/MobileBar";
 import { Hero, Numbers } from "@/components/site/Hero";
 import { Problem, Tried, Beliefs } from "@/components/site/Story";
-import { Method, Scorecard } from "@/components/site/Method";
+import { Method } from "@/components/site/Method";
 import { CaseStudies, Receipts, About } from "@/components/site/Proof";
 import { Offer, Fit, HowItWorks, Faq, FinalCta, Footer } from "@/components/site/Closing";
 
@@ -49,7 +49,6 @@ function Index() {
         <Tried />
         <Beliefs />
         <Method />
-        <Scorecard />
         <CaseStudies />
         <Receipts />
         <About />

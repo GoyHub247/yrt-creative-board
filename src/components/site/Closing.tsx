@@ -103,8 +103,8 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>How it <Accent>works.</Accent></h2>
+    <section id="apply" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+      <h2 className={H2}>How to apply.</h2>
       <ol className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-4">
         {steps.map((s, i) => (
           <li key={i} className="border-t border-line pt-5">
