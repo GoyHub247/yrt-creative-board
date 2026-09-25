@@ -60,11 +60,6 @@ export function WhatYouGet() {
           ))}
         </div>
       </div>
-
-      <p className="mt-14 text-center text-sm text-muted-foreground">
-        Pricing comes with your personal offer, after Jordan reviews your DM.
-      </p>
-      <div className="mt-8 flex justify-center"><DMButton size="lg" /></div>
     </div>
     </section>
   );

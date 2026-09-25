@@ -65,7 +65,10 @@ export function Apply() {
         <p className="mt-4 text-center text-xs text-muted-foreground">
           Revenue from everything we help you with counts. Full terms come with your offer.
         </p>
-
+        <p className="mt-8 text-center text-sm text-muted-foreground">
+          Pricing comes with your personal offer, after Jordan reviews your DM.
+        </p>
+        <div className="mt-6 flex justify-center"><DMButton size="lg" /></div>
 
         <p className={`mt-16 ${T.label}`}>How to apply</p>
         <ol className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-4">
