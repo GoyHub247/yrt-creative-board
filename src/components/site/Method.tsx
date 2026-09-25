@@ -1,7 +1,8 @@
+import { Accent } from "./AccentText";
 import { DMButton } from "@/components/site/DMButton";
 import { VideoPlayer } from "@/components/site/VideoPlayer";
+import { T } from "./typography";
 
-const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
 const phases = [
   { n: 1, name: "Foundation", title: "Build the engine.", what: "This phase is all about strategy, positioning and setting up the foundation to scale.", move: "You've landed your first clients from social, possible within 30 days." },
@@ -21,8 +22,8 @@ export function HowItWorks() {
   return (
     <section id="how-it-works" className="scroll-mt-24 bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>How the Creative Board works.</h2>
-      <p className="mx-auto mt-5 max-w-reading text-center text-lg text-muted-foreground">
+      <h2 className={T.sectionTitle}>How the Creative Board <Accent>works.</Accent></h2>
+      <p className={T.lead}>
         Our team of experienced operators help you and your people to build an evergreen content machine, in three phases. We advise and strategise, your team executes.
       </p>
 
@@ -36,22 +37,22 @@ export function HowItWorks() {
           <div key={p.n} className="relative flex flex-col rounded-xl border border-line bg-card p-6">
             <div className="flex items-baseline gap-3">
               <span className="font-serif text-3xl text-accent">{p.n}</span>
-              <h3 className="font-serif text-2xl text-foreground">{p.name}</h3>
+              <h3 className={T.cardTitle}>{p.name}</h3>
             </div>
             <p className="mt-3 font-medium text-foreground">{p.title}</p>
-            <div className="mt-5 text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">What happens</div>
+            <div className={`mt-5 ${T.label}`}>What happens</div>
             <p className="mt-2 leading-relaxed text-foreground">{p.what}</p>
             <div className="mt-6 rounded-lg bg-secondary p-4">
-              <div className="text-xs font-medium uppercase tracking-[0.14em] text-accent">You move on when</div>
-              <p className="mt-2 text-sm leading-relaxed text-foreground">{p.move}</p>
+              <div className={T.label}>You move on when</div>
+              <p className={`mt-2 ${T.body} text-foreground`}>{p.move}</p>
             </div>
           </div>
         ))}
       </div>
 
       <div className="mt-10 rounded-xl border border-line border-l-[3px] border-l-accent bg-card p-6 sm:p-8">
-        <h3 className="font-serif text-3xl text-foreground sm:text-4xl">
-          The end result: an evergreen client engine.
+        <h3 className={T.subTitle}>
+          The end result: <Accent>an Evergreen Client Engine.</Accent>
         </h3>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
           {outcomes.map((outcome) => (

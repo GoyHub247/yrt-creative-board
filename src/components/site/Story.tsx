@@ -1,6 +1,6 @@
+import { T } from "./typography";
 import { Accent } from "@/components/site/AccentText";
 
-const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
 export function Why() {
   const cards = [
@@ -18,30 +18,30 @@ export function Why() {
   return (
     <section id="why" className="surface-dark">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-        <h2 className={H2}>
+        <h2 className={T.sectionTitle}>
           You're great at running your business. <Accent>Your content doesn't show it yet.</Accent>
         </h2>
-        <p className="mx-auto mt-6 max-w-reading text-center text-lg leading-relaxed text-muted-foreground">
+        <p className={T.lead}>
           Stuck under 5,000 views. Views that never turn into DMs. Content that eats your week.
         </p>
 
-        <p className="mt-14 text-sm font-medium uppercase tracking-[0.14em] text-accent">
+        <p className={`mt-14 ${T.label}`}>
           You've probably tried one of these
         </p>
         <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
           {cards.map(([name, line]) => (
             <div key={name} className="rounded-xl border border-line bg-card p-6">
-              <h3 className="font-serif text-2xl text-foreground">{name}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{line}</p>
+              <h3 className={T.cardTitle}>{name}</h3>
+              <p className={`mt-3 ${T.body} text-muted-foreground`}>{line}</p>
             </div>
           ))}
         </div>
 
-        <h3 className="mt-16 font-serif text-3xl text-foreground sm:text-4xl">What actually works</h3>
+        <h3 className={`mt-16 ${T.subTitle}`}>What actually works</h3>
         <div className="mt-5 border-y border-line">
           {beliefs.map(([title, body]) => (
             <div key={title} className="grid grid-cols-1 gap-2 border-b border-line py-6 last:border-b-0 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-10">
-              <h4 className="font-serif text-2xl text-foreground">{title}</h4>
+              <h4 className={T.cardTitle}>{title}</h4>
               <p className="leading-relaxed text-muted-foreground">{body}</p>
             </div>
           ))}

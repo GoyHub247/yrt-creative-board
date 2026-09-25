@@ -4,8 +4,8 @@ import { Accent } from "@/components/site/AccentText";
 import { DMButton } from "@/components/site/DMButton";
 import { earningsText, openLegal, type LegalKey } from "@/components/site/LegalDialogs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { T } from "./typography";
 
-const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
 const yes = [
   "You run an online business making at minimum $20K/month.",
@@ -33,10 +33,10 @@ export function Apply() {
   return (
     <section id="apply" className="bg-background">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-        <h2 className={H2}>Is this <Accent>for you?</Accent></h2>
+        <h2 className={T.sectionTitle}>Is this <Accent>for you?</Accent></h2>
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="rounded-xl border border-line bg-card p-6 sm:p-8">
-            <h3 className="font-serif text-2xl text-foreground">For you if</h3>
+            <h3 className={T.cardTitle}>For you if</h3>
             <ul className="mt-5 space-y-4">
               {yes.map((t) => (
                 <li key={t} className="flex gap-3 text-foreground">
@@ -46,7 +46,7 @@ export function Apply() {
             </ul>
           </div>
           <div className="rounded-xl border border-line bg-card p-6 sm:p-8">
-            <h3 className="font-serif text-2xl text-muted-foreground">Not for you if</h3>
+            <h3 className={`${T.cardTitle} !text-muted-foreground`}>Not for you if</h3>
             <ul className="mt-5 space-y-4">
               {no.map((t) => (
                 <li key={t} className="flex gap-3 text-muted-foreground">
@@ -57,7 +57,7 @@ export function Apply() {
           </div>
         </div>
 
-        <p className="mt-16 text-sm font-semibold uppercase tracking-wider text-muted-foreground">How to apply</p>
+        <p className={`mt-16 ${T.label}`}>How to apply</p>
         <ol className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-4">
           {steps.map((s, i) => (
             <li key={i} className="border-t border-line pt-5">
@@ -86,7 +86,7 @@ export function Faq() {
   return (
     <section id="faq" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>What founders ask <Accent>before they DM.</Accent></h2>
+      <h2 className={T.sectionTitle}>What founders ask <Accent>before they DM.</Accent></h2>
       <Accordion type="single" collapsible className="mx-auto mt-12 max-w-reading">
         {faqs.map(([q, a], i) => (
           <AccordionItem key={q} value={`q${i}`} className="border-line">
@@ -104,10 +104,10 @@ export function FinalCta() {
   return (
     <section id="final-cta" className="surface-dark">
       <div className="mx-auto max-w-content px-6 py-20 text-center sm:py-28">
-        <h2 className="font-serif text-6xl leading-[0.95] text-foreground sm:text-7xl md:text-8xl">
-          Your One Catalyst Banger is coming. Build the engine first.
+        <h2 className={T.displayClose}>
+          Your One Catalyst Banger is coming. <Accent>Build the engine first.</Accent>
         </h2>
-        <p className="mx-auto mt-6 max-w-reading text-lg text-muted-foreground">
+        <p className={T.lead}>
           {site.totalSeats} founding seats. Jordan reviews every DM personally.
         </p>
         <div className="mt-10 flex justify-center"><DMButton size="lg" /></div>
@@ -132,7 +132,7 @@ export function Footer() {
             <a className={ext} href="#earnings-disclaimer" onClick={(e) => { e.preventDefault(); openLegal("earnings-disclaimer" as LegalKey); }}>Earnings disclaimer</a>
           </nav>
         </div>
-        <p className="mt-8 max-w-3xl text-xs leading-relaxed">{earningsText}</p>
+        <p className={`mt-8 max-w-3xl ${T.finePrint}`}>{earningsText}</p>
         <p className="mt-4 text-xs">© {new Date().getFullYear()} YRT Institute.</p>
       </div>
       </div>

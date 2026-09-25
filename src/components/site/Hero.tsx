@@ -1,5 +1,7 @@
+import { Accent } from "./AccentText";
 import { site } from "@/config/site";
 import { DMButton } from "@/components/site/DMButton";
+import { T } from "./typography";
 
 const figures = [
   { value: "8 figures", label: "revenue generated for clients." },
@@ -12,15 +14,15 @@ export function Hero() {
     <section id="hero" className="bg-background">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <div className="flex flex-col items-center text-center">
-        <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground sm:text-sm">
+        <p className={T.label}>
           YRT Creative Board · For founders doing at minimum $20k+/month
         </p>
 
-        <h1 className="mt-6 max-w-4xl font-serif text-6xl leading-[0.95] text-foreground sm:text-7xl md:text-8xl">
-          Turn your personal brand into an Evergreen Client Engine™.
+        <h1 className={`mt-6 max-w-4xl ${T.display}`}>
+          Turn your personal brand into an <Accent>Evergreen Client Engine<sup className="align-top text-[0.35em]">™</sup>.</Accent>
         </h1>
 
-        <p className="mt-7 max-w-reading text-lg leading-relaxed text-muted-foreground sm:text-xl">
+        <p className="mt-7 max-w-reading text-lg leading-relaxed text-muted-foreground">
           Build a well-oiled organic content machine that brings you inbound leads every day, so you can stop cold outreach and stop paying to acquire every client.
         </p>
 
@@ -40,7 +42,7 @@ export function Hero() {
           </a>
         </div>
 
-        <p className="mt-5 max-w-reading text-sm text-muted-foreground">
+        <p className={`mt-5 max-w-reading ${T.small}`}>
           {site.totalSeats} founding seats. Every application is personally reviewed by Jordan.
         </p>
 
@@ -48,8 +50,8 @@ export function Hero() {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
             {figures.map((figure) => (
               <div key={figure.value} className="text-center">
-                <div className="font-serif text-3xl text-foreground sm:text-4xl">{figure.value}</div>
-                <div className="mt-1 text-sm text-muted-foreground">{figure.label}</div>
+                <div className={`${T.figure} text-foreground`}>{figure.value}</div>
+                <div className={`mt-1 ${T.small}`}>{figure.label}</div>
               </div>
             ))}
           </div>

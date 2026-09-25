@@ -1,8 +1,9 @@
+import { Accent } from "./AccentText";
 import { Check } from "lucide-react";
 import { DMButton } from "@/components/site/DMButton";
 import { site } from "@/config/site";
+import { T } from "./typography";
 
-const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
 const rhythm: { label: string; text: string; note?: string }[] = [
   { label: "Every quarter", text: "A strategy session with our team to set your content goals and the plan for the next 90 days." },
@@ -27,8 +28,8 @@ export function WhatYouGet() {
   return (
     <section id="what-you-get" className="bg-background">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>A seat at the table with our whole team.</h2>
-      <p className="mx-auto mt-5 max-w-reading text-center text-lg text-muted-foreground">
+      <h2 className={T.sectionTitle}>A seat at the table with <Accent>our whole team.</Accent></h2>
+      <p className={T.lead}>
         A board seat isn't access to one person. It's access to the team behind 8 figures in client results.
       </p>
 
@@ -45,7 +46,7 @@ export function WhatYouGet() {
       </dl>
 
       <div className="mt-16">
-        <h3 className="text-center font-serif text-3xl text-foreground">The playbooks</h3>
+        <h3 className={`text-center ${T.subTitle}`}>The playbooks</h3>
         <p className="mx-auto mt-3 max-w-reading text-center text-muted-foreground">
           Training unlocks by phase, so you and your team are never overwhelmed.
         </p>
@@ -53,15 +54,15 @@ export function WhatYouGet() {
           {playbooks.map(([name, phase, line]) => (
             <div key={name} className="rounded-xl border border-line bg-card p-5">
               <span className="inline-block rounded-full border border-line px-2.5 py-0.5 text-xs text-accent">{phase}</span>
-              <h4 className="mt-3 font-semibold text-foreground">{name}</h4>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{line}</p>
+              <h4 className={`mt-3 ${T.cardTitle}`}>{name}</h4>
+              <p className={`mt-2 ${T.body} text-muted-foreground`}>{line}</p>
             </div>
           ))}
         </div>
       </div>
 
       <div className="mx-auto mt-12 max-w-reading">
-        <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Also included</h3>
+        <h3 className={T.label}>Also included</h3>
         <ul className="mt-4 space-y-3">
           {extras.map((t) => (
             <li key={t} className="flex gap-3 text-foreground">
