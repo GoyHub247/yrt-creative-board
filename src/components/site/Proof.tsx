@@ -110,13 +110,6 @@ export function Receipts() {
   );
 }
 
-const roles = [
-  ["Jordan Chen. Founder", "Loves brand, strategy and human psy"],
-  ["Creative Director", "Positioning and what to post."],
-  ["John. Short-form Specialist", "Formats, hooks, loops. He's at the frontier of short form."],
-  ["Funnel Specialist", "Turning profile visits and DMs into clients."],
-];
-
 export function Team() {
   return (
     <section id="team" className="mx-auto max-w-content px-6 py-20 sm:py-28">
@@ -124,14 +117,6 @@ export function Team() {
       <p className="mt-6 max-w-reading text-lg leading-relaxed text-muted-foreground">
         Our entire philosophy is built from years of testing and iterating. You'll get access to a team that's at the frontier of content creation. They're absolute monsters at creating content that gets you paid. The creative director, the short form specialist, the funnel expert, the entire crew that's behind 8 figures in client results and over 20B+ views, all are on the board.
       </p>
-      <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
-        {roles.map(([t, d]) => (
-          <div key={t} className="rounded-xl border border-line bg-card p-5">
-            <h3 className="font-serif text-2xl text-foreground">{t}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{d}</p>
-          </div>
-        ))}
-      </div>
       <div className="mt-10 grid grid-cols-1 items-center gap-8 rounded-xl border border-line bg-secondary p-6 sm:p-8 md:grid-cols-[240px_1fr]">
         {aboutPhoto ? (
           <img src={aboutPhoto} alt="Jordan Chen, founder of YRT Institute" loading="lazy" className="aspect-[4/5] w-full max-w-[240px] rounded-xl object-cover" />
