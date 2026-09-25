@@ -36,16 +36,6 @@ export function Apply() {
         <h2 className={T.sectionTitle}>Is this <Accent>for you?</Accent></h2>
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="rounded-xl border border-line bg-card p-6 sm:p-8">
-            <h3 className={T.cardTitle}>For you if</h3>
-            <ul className="mt-5 space-y-4">
-              {yes.map((t) => (
-                <li key={t} className="flex gap-3 text-foreground">
-                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />{t}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="rounded-xl border border-line bg-card p-6 sm:p-8">
             <h3 className={`${T.cardTitle} !text-muted-foreground`}>Not for you if</h3>
             <ul className="mt-5 space-y-4">
               {no.map((t) => (
@@ -55,7 +45,27 @@ export function Apply() {
               ))}
             </ul>
           </div>
+          <div className="rounded-xl border border-line bg-card p-6 sm:p-8">
+            <h3 className={T.cardTitle}>For you if</h3>
+            <ul className="mt-5 space-y-4">
+              {yes.map((t) => (
+                <li key={t} className="flex gap-3 text-foreground">
+                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden />{t}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+
+        <div className="mx-auto mt-12 max-w-2xl rounded-xl border-2 border-accent bg-card p-8 text-center">
+          <p className="font-serif text-2xl leading-snug text-foreground sm:text-3xl">
+            Make your investment back within 90 days, or you stay in for free until you do.
+          </p>
+        </div>
+        <p className="mt-4 text-center text-xs text-muted-foreground">
+          Revenue from everything we help you with counts. Full terms come with your offer.
+        </p>
+
 
         <p className={`mt-16 ${T.label}`}>How to apply</p>
         <ol className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-4">
