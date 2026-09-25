@@ -3,9 +3,9 @@ import { DMButton } from "@/components/site/DMButton";
 const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
 const paragraphs = [
-  "We've watched accounts go from 3,000 to 100,000 followers overnight, with more leads than the founder could answer. One video changes the account, and every video after it grows faster because the audience is bigger.",
-  "But one video only changes your business if the engine is ready for it. Most founders go viral with no offer in their bio, no clear next step and no system to handle the DMs, and the moment passes.",
-  "So we do two things. We give you more well-aimed shots at that video. And we make sure that when it hits, every buyer watching has somewhere to go.",
+  "We've watched accounts go from 3,000 to 100,000 followers overnight, with more leads than the founder could answer.",
+  "After your first successful video: testing new ideas becomes faster, converting leads into paying clients becomes smoother and your revenue scales harder than ever before.",
+  "We make sure this first One Banger arrives fast and that you are ready to actually convert them when the time comes.",
 ];
 
 export function OneVideo() {

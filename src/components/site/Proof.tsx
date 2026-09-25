@@ -111,9 +111,9 @@ export function Receipts() {
 }
 
 const roles = [
-  ["Jordan", "Founder. Reviews every DM personally."],
+  ["Jordan Chen. Founder", "Loves brand, strategy and human psy"],
   ["Creative Director", "Positioning and what to post."],
-  ["Short-form Specialist", "Formats, hooks and what stops the scroll."],
+  ["John. Short-form Specialist", "Formats, hooks, loops. He's at the frontier of short form."],
   ["Funnel Specialist", "Turning profile visits and DMs into clients."],
 ];
 
@@ -122,7 +122,7 @@ export function Team() {
     <section id="team" className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">Built from experience, not textbooks.</h2>
       <p className="mt-6 max-w-reading text-lg leading-relaxed text-muted-foreground">
-        YRT Institute is built by the team behind 8 figures in client results and 20B+ views. Jordan founded it. The people who did the work are the ones who teach it, and they're absolute monsters at content.
+        Our entire philosophy is built from years of testing and iterating. You'll get access to a team that's at the frontier of content creation. They're absolute monsters at creating content that gets you paid. The creative director, the short form specialist, the funnel expert, the entire crew that's behind 8 figures in client results and over 20B+ views, all are on the board.
       </p>
       <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
         {roles.map(([t, d]) => (
@@ -139,9 +139,11 @@ export function Team() {
           <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full max-w-[240px]" />
         )}
         <div>
-          <p className="text-lg leading-relaxed text-foreground">
-            "I started online at 17 with a 'how do you make money online' search. For years I chased views, until I went viral in the wrong markets and made nothing, while small videos brought in serious money. That's when it clicked: likes ain't buys. Our agency has since generated 8 figures for clients. YRT is how we teach it."
-          </p>
+          <div className="space-y-4 text-lg leading-relaxed text-foreground">
+            <p>"For years we've helped many businesses in various industries succeed on social media by taking over their content department. However once the partnership ended, the content systems always fell apart.</p>
+            <p>To help even more founders and their teams, we created YRT Creative Board, a advisory program where businesses get shown how to fish instead of just being given the result.</p>
+            <p>We help you and your people build the system and train up your team to become just as good or even better as we are."</p>
+          </div>
           <p className="mt-6 font-serif text-2xl italic text-accent">Jordan Chen, Founder</p>
         </div>
       </div>

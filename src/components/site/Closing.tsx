@@ -22,15 +22,14 @@ export function Offer() {
       <p className="mt-4 text-center text-xs text-muted-foreground">
         Revenue from everything we help you with counts. Full terms come with your offer.
       </p>
-      <p className="mt-10 text-center text-foreground">Pricing comes with your personal offer, after Jordan reviews your DM.</p>
       <div className="mt-6 flex justify-center"><DMButton size="lg" /></div>
     </section>
   );
 }
 
 const yes = [
-  "You run an agency, coaching, consulting or course business doing $20k+/month.",
-  "Your offer is worth $2k+ per client.",
+  "You run an online business making at minimum $20K/month.",
+  "Your have an offer worth $2k+ per client (can also be a back-end offer).",
   "You have real results and case studies to talk about.",
   "You'd rather fix the video than blame the algorithm.",
   "You actually care about the people you sell to.",
@@ -38,7 +37,7 @@ const yes = [
 ];
 const no = [
   "You're just starting out or don't have case studies yet. Build those first.",
-  "You want content to show off.",
+  "You want to make content to show off rather than make an impact.",
   "You want an agency to make it all for you.",
   "You're looking for a shortcut.",
 ];
@@ -78,7 +77,7 @@ export function Fit() {
 const steps = [
   `DM '${site.dmKeyword}' to @${site.instagramHandle} with what you sell, your monthly revenue, where your clients come from now, and your biggest content problem.`,
   "Jordan reads every message himself and replies within 24–48 hours.",
-  "If it's a fit, you get your personal offer: the full breakdown, plus a short video walking through it for your business.",
+  "If it's a fit, you get your personal offer: the full breakdown, price, plus a short video walking through it for your business.",
   "You start within about 7 days.",
 ];
 
@@ -135,7 +134,7 @@ export function FinalCta() {
     <section id="final-cta" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-24 text-center sm:py-32">
         <h2 className="font-serif text-6xl leading-[0.95] text-foreground sm:text-7xl md:text-8xl">
-          Your one video is coming. Build the engine first.
+          Your One Catalyst Banger is coming. Build the engine first.
         </h2>
         <p className="mx-auto mt-6 max-w-reading text-lg text-muted-foreground">
           {site.totalSeats} founding seats. Jordan reviews every DM personally.

@@ -4,8 +4,8 @@ import { VideoPlayer } from "@/components/site/VideoPlayer";
 const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
 const phases = [
-  { n: 1, name: "Foundation", title: "Build the engine.", what: "We get clear on what you want, position your personal brand, and turn the attention you already have into quick cash.", move: "You've landed your first clients from social, possible within 30 days." },
-  { n: 2, name: "Inbound", title: "Start it up.", what: "We find your format and filming schedule, and the leads start coming in.", move: "New leads arrive from social every day, the aim by day 90." },
+  { n: 1, name: "Foundation", title: "Build the engine.", what: "This phase is all about strategy, positioning and setting up the foundation to scale.", move: "You've landed your first clients from social, possible within 30 days." },
+  { n: 2, name: "Inbound", title: "Start it up.", what: "We find your format and filming schedule, and the leads start flooding in.", move: "New leads arrive from social every day, the aim by day 90." },
   { n: 3, name: "Leverage", title: "Hand over the keys.", what: "Your team runs and maintains the engine. You're the face, not the mechanic.", move: "It takes you a couple of hours a week." },
 ];
 
@@ -13,8 +13,8 @@ const outcomes = [
   "Inbound leads in your DMs every day",
   "No cold outreach",
   "No paying for every lead",
-  "A couple of hours a week of your time",
-  "It compounds: every video makes the next one easier to grow",
+  "A couple of hours a month of your time",
+  "A compounding asset: every video builds upon the last",
 ];
 
 export function HowItWorks() {
@@ -22,7 +22,7 @@ export function HowItWorks() {
     <section id="how-it-works" className="mx-auto max-w-content scroll-mt-24 px-6 py-20 sm:py-28">
       <h2 className={H2}>How the Creative Board works.</h2>
       <p className="mx-auto mt-5 max-w-reading text-center text-lg text-muted-foreground">
-        Not an agency. Not a course. We build it with you, in three phases.
+        Our team of experienced operators help you and your people to build an evergreen content machine, in three phases. We advise and strategise, your team executes.
       </p>
 
       <div className="mx-auto mt-12 max-w-4xl">
