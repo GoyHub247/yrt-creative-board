@@ -7,28 +7,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
-export function Offer() {
-  return (
-    <section id="offer" className="bg-background">
-      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>Your seat on the Creative Board.</h2>
-      <p className="mx-auto mt-5 max-w-reading text-center text-lg text-muted-foreground">
-        {site.totalSeats} founding seats. Rolling entry: you start within about 7 days of being accepted.
-      </p>
-      <div className="mx-auto mt-12 max-w-2xl rounded-xl border-2 border-accent bg-card p-8 text-center">
-        <p className="font-serif text-2xl leading-snug text-foreground sm:text-3xl">
-          Make your investment back within 90 days, or you stay in free until you do.
-        </p>
-      </div>
-      <p className="mt-4 text-center text-xs text-muted-foreground">
-        Revenue from everything we help you with counts. Full terms come with your offer.
-      </p>
-      <div className="mt-6 flex justify-center"><DMButton size="lg" /></div>
-    </div>
-    </section>
-  );
-}
-
 const yes = [
   "You run an online business making at minimum $20K/month.",
   "Your have an offer worth $2k+ per client (can also be a back-end offer).",
@@ -44,11 +22,18 @@ const no = [
   "You're looking for a shortcut.",
 ];
 
-export function Fit() {
+const steps = [
+  `DM '${site.dmKeyword}' to @${site.instagramHandle} with what you sell, your monthly revenue, where your clients come from now, and your biggest content problem.`,
+  "Jordan reads every message himself and replies within 24–48 hours.",
+  "If it's a fit, you get your personal offer: the full breakdown, price, plus a short video walking through it for your business.",
+  "You start within about 7 days.",
+];
+
+export function Apply() {
   return (
-    <section id="fit" className="bg-secondary">
+    <section id="apply" className="bg-background">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-        <h2 className={H2}>This is for you <Accent>if…</Accent></h2>
+        <h2 className={H2}>Is this <Accent>for you?</Accent></h2>
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="rounded-xl border border-line bg-card p-6 sm:p-8">
             <h3 className="font-serif text-2xl text-foreground">For you if</h3>
@@ -71,33 +56,18 @@ export function Fit() {
             </ul>
           </div>
         </div>
+
+        <p className="mt-16 text-sm font-semibold uppercase tracking-wider text-muted-foreground">How to apply</p>
+        <ol className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-4">
+          {steps.map((s, i) => (
+            <li key={i} className="border-t border-line pt-5">
+              <div className="font-serif text-3xl text-accent">{i + 1}</div>
+              <p className="mt-3 leading-relaxed text-foreground">{s}</p>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-12 flex justify-center"><DMButton size="lg" /></div>
       </div>
-    </section>
-  );
-}
-
-const steps = [
-  `DM '${site.dmKeyword}' to @${site.instagramHandle} with what you sell, your monthly revenue, where your clients come from now, and your biggest content problem.`,
-  "Jordan reads every message himself and replies within 24–48 hours.",
-  "If it's a fit, you get your personal offer: the full breakdown, price, plus a short video walking through it for your business.",
-  "You start within about 7 days.",
-];
-
-export function Apply() {
-  return (
-    <section id="apply" className="bg-secondary">
-      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={H2}>How to apply.</h2>
-      <ol className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-4">
-        {steps.map((s, i) => (
-          <li key={i} className="border-t border-line pt-5">
-            <div className="font-serif text-3xl text-accent">{i + 1}</div>
-            <p className="mt-3 leading-relaxed text-foreground">{s}</p>
-          </li>
-        ))}
-      </ol>
-      <div className="mt-12 flex justify-center"><DMButton size="lg" /></div>
-    </div>
     </section>
   );
 }
@@ -105,21 +75,16 @@ export function Apply() {
 const faqs = [
   ["Is this a course?", "No. We direct your actual content: we plan it with you, review it and tell you what to change. There's training too, unlocked by phase, but it's the smallest part."],
   ["Is it done-for-you?", "No. We advise; you and your team execute. In Phase 3 we help you build the team that runs it, so you don't have to."],
+  ["Who will I work with?", "Our whole team: Jordan, our creative director, short-form specialist and funnel specialist."],
   ["How much time will it take?", "More at the start while we build the foundation. The goal is a couple of hours a week once your team runs it, and filming can be batched weekly or monthly."],
   ["I have no audience yet. Will it work?", "Yes. A fresh account is slower than one with a small following, but the view jail isn't real. If you're stuck under 5,000 views, the content just isn't good enough yet."],
-  ["Will this work in my industry?", "Every industry is the same industry: a human on the other side of the screen."],
-  ["What if the algorithm changes?", "It doesn't. People's interests do, and we teach you to follow them."],
-  ["How fast will I see results?", "First clients from social are possible within 30 days, and the aim is new leads every day by day 90. Accounts with an existing following move faster."],
   ["Which platforms?", "Short-form video first. Long-form YouTube is coming."],
-  ["Who will I work with?", "Our whole team: Jordan, our creative director, short-form specialist and funnel specialist."],
-  ["Can my team join?", "Yes."],
   ["What does it cost?", "Pricing comes with your personal offer, after Jordan reviews your DM."],
-  ["Is there a guarantee?", "Yes. Make your investment back within 90 days, or you stay in free until you do."],
 ];
 
 export function Faq() {
   return (
-    <section id="faq" className="bg-background">
+    <section id="faq" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>What founders ask <Accent>before they DM.</Accent></h2>
       <Accordion type="single" collapsible className="mx-auto mt-12 max-w-reading">
