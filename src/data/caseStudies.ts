@@ -11,9 +11,9 @@ export type CaseStudy = {
 };
 
 export const caseStudies: CaseStudy[] = [
-  { tag: "Info product · [niche]", headline: "[Case study 1 — to add]", verified: false },
+  { tag: "Consulting · UHNWI Tax Advisor", headline: "Closed multiple UHNWI clients by posting highly targeted content.", verified: false },
   {
-    tag: "Agency · Creator management",
+    tag: "Agency · Creator Management",
     handle: "@[handle]",
     headline: "Built an 8-figure agency on inbound alone.",
     beforeAfter: "0 → 500k followers",
@@ -22,5 +22,5 @@ export const caseStudies: CaseStudy[] = [
     breakdown: "[Breakdown — to add]",
     verified: false,
   },
-  { tag: "Info product · [niche]", headline: "[Case study 3 — to add]", verified: false },
+  { tag: "Info Product · E-Commerce", headline: "Built a 7-figure course business without showing off his lifestyle.", verified: false },
 ];

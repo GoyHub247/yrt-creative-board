@@ -1,13 +1,13 @@
 import { site } from "@/config/site";
 import { DMButton } from "@/components/site/DMButton";
-import { AccentText, Accent } from "@/components/site/AccentText";
+import { AccentText } from "@/components/site/AccentText";
 
 export function Hero() {
   return (
     <section id="hero" className="mx-auto max-w-content px-6 pt-16 pb-20 sm:pt-24">
       <div className="flex flex-col items-center text-center">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground sm:text-sm">
-          YRT Creative Board · For founders doing $20k+/month
+          YRT Creative Board · For founders doing at minimum $20k+/month
         </p>
 
         <h1 className="mt-6 max-w-4xl font-serif text-6xl leading-[0.95] text-foreground sm:text-7xl md:text-8xl">
@@ -15,8 +15,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-7 max-w-reading text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Build a well-oiled organic content machine that brings you leads every day, so you can stop cold outreach and
-          stop paying to acquire every client.
+          Build a well-oiled organic content machine that brings you inbound leads every day, so you can stop cold outreach and stop paying to acquire every client.
         </p>
 
         <div className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:items-center">
@@ -36,7 +35,7 @@ export function Hero() {
         </div>
 
         <p className="mt-5 max-w-reading text-sm text-muted-foreground">
-          {site.totalSeats} founding seats. Jordan reviews every DM personally.
+          {site.totalSeats} founding seats. Every application is personally reviewed by Jordan.
         </p>
       </div>
     </section>
@@ -45,13 +44,13 @@ export function Hero() {
 
 export function Numbers() {
   const figures = [
-    { value: "8 figures", label: "generated for clients" },
-    { value: "30,000+", label: "leads generated" },
+    { value: "8 figures", label: "revenue generated for clients." },
+    { value: "30,000+", label: "qualified leads generated." },
     {
       value: "20B+",
       label: (
         <>
-          total views, with single videos past 100M. <Accent>The number we care about least.</Accent>
+          total views, with single videos past 100M.
         </>
       ),
     },
@@ -69,7 +68,7 @@ export function Numbers() {
           ))}
         </div>
         <p className="mt-12 text-center text-sm text-muted-foreground sm:text-base">
-          <AccentText>Views are a side effect. Buyers are the point.</AccentText>
+          <AccentText>Views are the number we care about the least. It's a side effect. Buyers are the point.</AccentText>
         </p>
       </div>
     </section>

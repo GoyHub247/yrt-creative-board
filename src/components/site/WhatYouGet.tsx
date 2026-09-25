@@ -4,22 +4,22 @@ import { DMButton } from "@/components/site/DMButton";
 const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-center max-w-3xl mx-auto";
 
 const rhythm: { label: string; text: string; note?: string }[] = [
-  { label: "Every quarter", text: "A planning session with our team to set your goals and the plan for the next 90 days." },
-  { label: "Every month", text: "A 1:1 review call with our team: what's working, what isn't, what changes. Live, not pre-recorded.", note: "Founding members only. The public program reviews as a group." },
-  { label: "Every day", text: "The Boardroom: every founder on the board in one group, working toward the same goal. Wins, honest feedback, and borrowing what's working for others." },
+  { label: "Every quarter", text: "A strategy session with our team to set your content goals and the plan for the next 90 days." },
+  { label: "Every month", text: "A 1:1 review call with our team: what's working, what isn't, what changes." },
+  { label: "Every day", text: "The Boardroom: every founder on the board in one group, working toward the same goal. Wins, honest feedback, hot seats, and borrowing what's working for others." },
 ];
 
 const playbooks = [
-  ["Positioning", "Foundation", "Who your content is for, what you're known for, and why buyers pick you."],
-  ["Inbound Leads Engine", "Inbound", "The full content cycle: ideation, batched filming, editing and posting, on a schedule that fits you."],
-  ["Conversion", "Foundation", "Turning profile visits and DMs into clients: bio, pinned posts, DM keyword and the conversation itself."],
-  ["Outsourcing", "Leverage", "Hiring, training and managing the team that runs the engine for you."],
+  ["Brand & Positioning", "Foundation", "Becoming the most trusted authority figure in your space. Building a genuine brand that attracts and converts leads like crazy whilst also opening up the door for incredible partnerships."],
+  ["Inbound Leads Engine", "Inbound", "The entire content cycle: ideation, filming, editing and posting like a professional, not an at-home amateur, on a schedule that fits you and your lifestyle."],
+  ["Conversion", "Foundation", "Turning views, profile visits and DMs into clients using the same systems that have generated over 30,000 leads for others."],
+  ["People & Systems", "Leverage", "Hiring, training and managing the team that runs the engine so you can just be the face, not the operator."],
 ];
 
 const extras = [
   "An onboarding call to set your goals and first strategy",
   "Your team can join",
-  "Founding members only: a direct line to Jordan and the team",
+  "Direct access to the team that has been",
 ];
 
 export function WhatYouGet() {
