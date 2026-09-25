@@ -6,7 +6,7 @@ import { T } from "./typography";
 const figures = [
   { value: "8 figures", label: "revenue generated for clients." },
   { value: "30,000+", label: "qualified leads generated." },
-  { value: "20B+", label: "total views, with single videos past 100M." },
+  { value: "20B+", label: "total views, with single videos past 107M." },
 ];
 
 export function Hero() {
