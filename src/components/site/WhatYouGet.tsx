@@ -24,7 +24,8 @@ const extras = [
 
 export function WhatYouGet() {
   return (
-    <section id="what-you-get" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="what-you-get" className="bg-background">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>A seat at the table with our whole team.</h2>
       <p className="mx-auto mt-5 max-w-reading text-center text-lg text-muted-foreground">
         A board seat isn't access to one person. It's access to the team behind 8 figures in client results.
@@ -70,6 +71,7 @@ export function WhatYouGet() {
       </div>
 
       <div className="mt-12 flex justify-center"><DMButton size="lg" /></div>
+    </div>
     </section>
   );
 }

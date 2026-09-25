@@ -10,7 +10,8 @@ const paragraphs = [
 
 export function OneVideo() {
   return (
-    <section id="one-video" className="mx-auto max-w-content scroll-mt-24 px-6 py-20 sm:py-28">
+    <section id="one-video" className="scroll-mt-24 bg-background">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>It only takes one video.</h2>
 
       <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
@@ -87,6 +88,7 @@ export function OneVideo() {
       <div className="mt-12 flex justify-center">
         <DMButton size="lg" />
       </div>
+    </div>
     </section>
   );
 }
