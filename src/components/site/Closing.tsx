@@ -118,7 +118,7 @@ export function FinalCta() {
     <section id="final-cta" className="surface-dark">
       <div className="mx-auto max-w-content px-6 py-20 text-center sm:py-28">
         <h2 className={T.displayClose}>
-          Your Catalyst Banger™ is waiting for you. Let's go.
+          Your Catalyst Banger is waiting for you. Let's go.
         </h2>
         <div className="mt-10 flex justify-center"><DMButton size="lg" /></div>
       </div>
