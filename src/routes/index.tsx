@@ -32,6 +32,8 @@ function Index() {
     >
       <TopBar />
       <main>
+        <Hero />
+        <Numbers />
         {sections.map((id) => (
           <section key={id} id={id} className="mx-auto max-w-content px-6 py-16">
             <div className="rounded-xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">
