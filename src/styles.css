@@ -116,5 +116,7 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  html { overflow-x: clip; }
   h1, h2, h3 { font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.01em; }
 }
