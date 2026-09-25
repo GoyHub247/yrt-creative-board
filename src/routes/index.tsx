@@ -7,6 +7,7 @@ import { Hero, Numbers } from "@/components/site/Hero";
 import { Problem, Tried, Beliefs } from "@/components/site/Story";
 import { Method, Scorecard } from "@/components/site/Method";
 import { CaseStudies, Receipts, About } from "@/components/site/Proof";
+import { Offer, Fit, HowItWorks, Faq, FinalCta, Footer } from "@/components/site/Closing";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,11 +22,6 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
-
-const sections = [
-  
-  "offer", "fit", "how-it-works", "faq", "final-cta",
-];
 
 function Index() {
   return (
@@ -45,19 +41,13 @@ function Index() {
         <CaseStudies />
         <Receipts />
         <About />
-        {sections.map((id) => (
-          <section key={id} id={id} className="mx-auto max-w-content px-6 py-16">
-            <div className="rounded-xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">
-              [{id}]
-            </div>
-          </section>
-        ))}
+        <Offer />
+        <Fit />
+        <HowItWorks />
+        <Faq />
+        <FinalCta />
       </main>
-      <footer id="footer" className="mx-auto max-w-content px-6 py-16">
-        <div className="rounded-xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">
-          [footer]
-        </div>
-      </footer>
+      <Footer />
       <MobileBar />
     </div>
   );
