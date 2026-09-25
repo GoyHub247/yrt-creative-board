@@ -8,6 +8,7 @@ import { MobileBar } from "@/components/site/MobileBar";
 import { Hero, Numbers } from "@/components/site/Hero";
 import { Problem, Tried, Beliefs } from "@/components/site/Story";
 import { HowItWorks } from "@/components/site/Method";
+import { WhatYouGet } from "@/components/site/WhatYouGet";
 import { CaseStudies, Receipts, About } from "@/components/site/Proof";
 import { Offer, Fit, Apply, Faq, FinalCta, Footer } from "@/components/site/Closing";
 
@@ -45,6 +46,7 @@ function Index() {
       <main>
         <Hero />
         <HowItWorks />
+        <WhatYouGet />
         <Numbers />
         <Problem />
         <Tried />
