@@ -10,7 +10,8 @@ export function Problem() {
     "You start strong, then falling off after a few weeks of mediocre results.",
   ];
   return (
-    <section id="problem" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="problem" className="bg-background">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>
         You're great at running your business. <Accent>Your content doesn't show it yet.</Accent>
       </h2>
@@ -22,6 +23,7 @@ export function Problem() {
           </div>
         ))}
       </div>
+    </div>
     </section>
   );
 }
@@ -34,7 +36,7 @@ export function Tried() {
     ["The CAC Optimizer", "Reliant fully on paid advertising to acquire new clients, instead of building an engine that doesn't charge per lead."],
   ];
   return (
-    <section id="tried" className="border-y border-line bg-secondary">
+    <section id="tried" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
         <h2 className={H2}>These are the people we've worked with the most.</h2>
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -68,7 +70,8 @@ export function Beliefs() {
     ["Post more", "Post better"],
   ];
   return (
-    <section id="beliefs" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="beliefs" className="surface-dark">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>
         Social media isn't a numbers game. <Accent>It's a people game.</Accent>
       </h2>
@@ -101,6 +104,7 @@ export function Beliefs() {
       <p className="mx-auto mt-14 max-w-2xl text-center text-lg leading-relaxed text-foreground">
         One more thing. In order to be a great authority figure, you need to be someone in real life, not a larper, which is why we only work with founders who have real results/experience to talk about.
       </p>
+    </div>
     </section>
   );
 }

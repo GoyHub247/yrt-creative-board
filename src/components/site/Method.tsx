@@ -19,7 +19,8 @@ const outcomes = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="mx-auto max-w-content scroll-mt-24 px-6 py-20 sm:py-28">
+    <section id="how-it-works" className="scroll-mt-24 bg-secondary">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>How the Creative Board works.</h2>
       <p className="mx-auto mt-5 max-w-reading text-center text-lg text-muted-foreground">
         Our team of experienced operators help you and your people to build an evergreen content machine, in three phases. We advise and strategise, your team executes.
@@ -48,7 +49,7 @@ export function HowItWorks() {
         ))}
       </div>
 
-      <div className="mt-10 rounded-xl border border-line bg-secondary p-6 sm:p-8">
+      <div className="mt-10 rounded-xl border border-line border-l-[3px] border-l-accent bg-card p-6 sm:p-8">
         <h3 className="font-serif text-3xl text-foreground sm:text-4xl">
           The end result: an evergreen client engine.
         </h3>
@@ -65,6 +66,7 @@ export function HowItWorks() {
       <div className="mt-10 flex justify-center">
         <DMButton size="lg" />
       </div>
+    </div>
     </section>
   );
 }

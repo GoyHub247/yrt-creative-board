@@ -51,7 +51,8 @@ function CaseCard({ c }: { c: CaseStudy }) {
 
 export function CaseStudies() {
   return (
-    <section id="case-studies" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="case-studies" className="bg-secondary">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>
         Different industries. <Accent>Same human on the other side of the screen.</Accent>
       </h2>
@@ -61,6 +62,7 @@ export function CaseStudies() {
       <p className="mt-8 text-center text-sm text-muted-foreground">
         Results from profiles our team directed. Not typical; see the earnings disclaimer.
       </p>
+    </div>
     </section>
   );
 }
@@ -77,8 +79,8 @@ export function Receipts() {
   }, [active]);
 
   return (
-    <section id="receipts" className="border-y border-line bg-secondary">
-      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="receipts" className="bg-secondary">
+      <div className="mx-auto max-w-content px-6 pb-20 sm:pb-28">
         <h2 className={H2}>Likes ain't buys. <Accent>These are buys.</Accent></h2>
         <p className="mx-auto mt-5 max-w-reading text-center text-muted-foreground">
           Most of our clients don't want competitors seeing their numbers, so names are blurred.
@@ -86,7 +88,7 @@ export function Receipts() {
         <div className="mt-12 columns-2 gap-4 md:columns-3 lg:columns-4">
           {receipts.length === 0
             ? placeholderHeights.map((h, i) => (
-                <Placeholder key={i} label="[Receipt]" className={`mb-4 break-inside-avoid bg-card ${h}`} />
+                <Placeholder key={i} label="[Receipt]" className={`mb-4 break-inside-avoid !bg-card ${h}`} />
               ))
             : receipts.map((r, i) => (
                 <button key={i} type="button" onClick={() => setActive(r)} className="mb-4 block w-full break-inside-avoid text-left">
@@ -112,7 +114,8 @@ export function Receipts() {
 
 export function Team() {
   return (
-    <section id="team" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="team" className="bg-background">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">Built from experience, not textbooks.</h2>
       <p className="mt-6 max-w-reading text-lg leading-relaxed text-muted-foreground">
         Our entire philosophy is built from years of testing and iterating. You'll get access to a team that's at the frontier of content creation. They're absolute monsters at creating content that gets you paid. The creative director, the short form specialist, the funnel expert, the entire crew that's behind 8 figures in client results and over 20B+ views, all are on the board.
@@ -121,7 +124,7 @@ export function Team() {
         {aboutPhoto ? (
           <img src={aboutPhoto} alt="Jordan Chen, founder of YRT Institute" loading="lazy" className="aspect-[4/5] w-full max-w-[240px] rounded-xl object-cover" />
         ) : (
-          <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full max-w-[240px]" />
+          <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full max-w-[240px] !bg-card" />
         )}
         <div>
           <div className="space-y-4 text-lg leading-relaxed text-foreground">
@@ -132,6 +135,7 @@ export function Team() {
           <p className="mt-6 font-serif text-2xl italic text-accent">Jordan Chen, Founder</p>
         </div>
       </div>
+    </div>
     </section>
   );
 }

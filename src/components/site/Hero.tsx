@@ -4,7 +4,8 @@ import { AccentText } from "@/components/site/AccentText";
 
 export function Hero() {
   return (
-    <section id="hero" className="mx-auto max-w-content px-6 pt-16 pb-20 sm:pt-24">
+    <section id="hero" className="bg-background">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <div className="flex flex-col items-center text-center">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground sm:text-sm">
           YRT Creative Board · For founders doing at minimum $20k+/month
@@ -38,6 +39,7 @@ export function Hero() {
           {site.totalSeats} founding seats. Every application is personally reviewed by Jordan.
         </p>
       </div>
+    </div>
     </section>
   );
 }
@@ -57,8 +59,8 @@ export function Numbers() {
   ];
 
   return (
-    <section id="numbers" className="border-y border-line bg-secondary">
-      <div className="mx-auto max-w-content px-6 py-16 sm:py-20">
+    <section id="numbers" className="bg-secondary">
+      <div className="mx-auto max-w-content px-6 py-14 sm:py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
           {figures.map((f) => (
             <div key={f.value} className="text-center">

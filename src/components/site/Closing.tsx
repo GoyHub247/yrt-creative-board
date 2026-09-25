@@ -9,7 +9,8 @@ const H2 = "font-serif text-4xl leading-tight text-foreground sm:text-5xl text-c
 
 export function Offer() {
   return (
-    <section id="offer" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="offer" className="bg-background">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>Your seat on the Creative Board.</h2>
       <p className="mx-auto mt-5 max-w-reading text-center text-lg text-muted-foreground">
         {site.totalSeats} founding seats. Rolling entry: you start within about 7 days of being accepted.
@@ -23,6 +24,7 @@ export function Offer() {
         Revenue from everything we help you with counts. Full terms come with your offer.
       </p>
       <div className="mt-6 flex justify-center"><DMButton size="lg" /></div>
+    </div>
     </section>
   );
 }
@@ -44,7 +46,7 @@ const no = [
 
 export function Fit() {
   return (
-    <section id="fit" className="border-y border-line bg-secondary">
+    <section id="fit" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
         <h2 className={H2}>This is for you <Accent>if…</Accent></h2>
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -83,7 +85,8 @@ const steps = [
 
 export function Apply() {
   return (
-    <section id="apply" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="apply" className="bg-secondary">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>How to apply.</h2>
       <ol className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-4">
         {steps.map((s, i) => (
@@ -94,6 +97,7 @@ export function Apply() {
         ))}
       </ol>
       <div className="mt-12 flex justify-center"><DMButton size="lg" /></div>
+    </div>
     </section>
   );
 }
@@ -115,7 +119,8 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section id="faq" className="mx-auto max-w-content px-6 py-20 sm:py-28">
+    <section id="faq" className="bg-background">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={H2}>What founders ask <Accent>before they DM.</Accent></h2>
       <Accordion type="single" collapsible className="mx-auto mt-12 max-w-reading">
         {faqs.map(([q, a], i) => (
@@ -125,14 +130,15 @@ export function Faq() {
           </AccordionItem>
         ))}
       </Accordion>
+    </div>
     </section>
   );
 }
 
 export function FinalCta() {
   return (
-    <section id="final-cta" className="bg-secondary">
-      <div className="mx-auto max-w-content px-6 py-24 text-center sm:py-32">
+    <section id="final-cta" className="surface-dark">
+      <div className="mx-auto max-w-content px-6 py-20 text-center sm:py-28">
         <h2 className="font-serif text-6xl leading-[0.95] text-foreground sm:text-7xl md:text-8xl">
           Your One Catalyst Banger is coming. Build the engine first.
         </h2>
@@ -148,7 +154,8 @@ export function FinalCta() {
 export function Footer() {
   const ext = "hover:text-foreground";
   return (
-    <footer id="footer" className="border-t border-line">
+    <footer id="footer" className="surface-dark">
+      <div className="border-t border-line">
       <div className="mx-auto max-w-content px-6 py-12 text-sm text-muted-foreground">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="font-serif text-xl text-foreground">YRT Institute</div>
@@ -162,6 +169,7 @@ export function Footer() {
         </div>
         <p className="mt-8 max-w-3xl text-xs leading-relaxed">{earningsText}</p>
         <p className="mt-4 text-xs">© {new Date().getFullYear()} YRT Institute.</p>
+      </div>
       </div>
     </footer>
   );
