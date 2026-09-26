@@ -25,7 +25,7 @@ const no = [
 const steps = [
   `DM '${site.dmKeyword}' to @${site.instagramHandle} on Instagram.`,
   "You'll be prompted with a small questionnaire to filter out unqualified founders.",
-  "If it's a fit, you get an offer doc sent including the full breakdown of the process, pricing, payment link, next steps, etc. You'll have the option to call someone from the team if needed.",
+  "If it's a fit, you get an offer doc sent including the full breakdown of the process, pricing, payment link, next steps, etc.",
   "Once paid, you'll start within 7 days.",
 ];
 
