@@ -8,7 +8,7 @@ export function MobileBar() {
   useEffect(() => {
     const el = document.querySelector("[data-hero-ctas]");
     if (!el) { setShow(true); return; }
-    const io = new IntersectionObserver(([e]) => setShow(!e.isIntersecting));
+    const io = new IntersectionObserver(([e]) => setShow(!e?.isIntersecting));
     io.observe(el);
     return () => io.disconnect();
   }, []);
