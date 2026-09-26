@@ -8,7 +8,7 @@ import { T } from "./typography";
 
 
 const yes = [
-  "You run an online business making at minimum $20K/month.",
+  "You run an agency or an expert-led business (courses, coaching, consulting) doing $20k+/month.",
   "Your have an offer worth $2k+ per client (can also be a back-end offer).",
   "You have real results and case studies to talk about.",
   "You'd rather fix the video than blame the algorithm.",

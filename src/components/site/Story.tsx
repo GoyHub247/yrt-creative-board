@@ -11,7 +11,7 @@ export function Why() {
   ];
   const beliefs = [
     ["Likes ain't buys.", "20 billion views taught us that views are a side effect. We build content for people who will actually buy."],
-    ["Every industry is the same industry.", "Agencies, coaching, consulting, local businesses: it doesn't matter because there's always a human on the other side of the screen. Human nature and psychology doesn't change."],
+    ["Every industry is the same industry.", "Your buyers might run e-com brands, local businesses or they don't even own a business yet. It doesn't matter: there's always always a human on the other side of the screen, and human psychology doesn't change."],
     ["It's not the algorithm. It's the video.", "The algorithm doesn't change; people's interests do. In our experience, 95% of the time an underperforming video is a video problem."],
   ];
 
