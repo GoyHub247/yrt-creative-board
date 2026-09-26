@@ -22,7 +22,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-7 max-w-reading text-lg leading-relaxed text-muted-foreground">
-          Guided by our team, built by you: an organic content machine that brings in inbound leads every day, so you can stop cold outreach and stop paying to acquire every client.
+          Create an organic content machine that brings in high-ticket inbound leads every single day.
         </p>
 
         <div data-hero-ctas className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:items-center">
