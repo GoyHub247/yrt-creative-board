@@ -13,7 +13,7 @@ const honestyParagraphs = [
 
 export function Honesty() {
   return (
-    <section id="proof" className="bg-secondary">
+    <section id="proof" className="bg-background">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
         <h2 className={T.sectionTitle}>
           Why there are no testimonials <Accent>here (yet).</Accent>

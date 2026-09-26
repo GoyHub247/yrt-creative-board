@@ -49,8 +49,8 @@ function Index() {
         <HowItWorks />
         <Why />
         <OneVideo />
-        <Honesty />
         <WhatYouGet />
+        <Honesty />
         <Apply />
         <Faq />
         <FinalCta />
