@@ -24,9 +24,9 @@ const no = [
 
 const steps = [
   `DM '${site.dmKeyword}' to @${site.instagramHandle} on Instagram.`,
-  "Jordan reads every message himself and replies within 24–48 hours.",
-  "If it's a fit, you get an offer sent including full breakdown of the process, pricing, next steps, etc.",
-  "You start within about 7 days.",
+  "You'll be prompted with a small questionnaire to filter out unqualified founders.",
+  "If it's a fit, you get an offer doc sent including the full breakdown of the process, pricing, payment link, next steps, etc. You'll have the option to call someone from the team if needed.",
+  "Once paid, you'll start within 7 days.",
 ];
 
 export function Apply() {
@@ -66,7 +66,7 @@ export function Apply() {
           Revenue from everything we help you with counts. Full terms come with your offer.
         </p>
         <p className="mt-8 text-center text-sm text-muted-foreground">
-          Pricing comes with your personal offer, after Jordan reviews your DM.
+          {"\n"}
         </p>
         <div className="mt-6 flex justify-center"><DMButton size="lg" /></div>
 

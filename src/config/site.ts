@@ -12,4 +12,4 @@ export const site = {
   accentColor: "#2F4A3A",
 } as const;
 
-export const seatLabel = `${site.seatsLeft} of ${site.totalSeats} founding seats left`;
+export const seatLabel = `${site.seatsLeft} of ${site.totalSeats} beta seats left`;

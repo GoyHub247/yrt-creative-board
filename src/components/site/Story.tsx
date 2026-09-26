@@ -26,7 +26,7 @@ export function Why() {
         </p>
 
         <p className={`mt-14 ${T.label}`}>
-          YOU'VE PROBABLY TRIED ONE OF THESE (AS THESE ARE THE FOUNDERS WE MOST WORK WITH)
+          YOU'VE PROBABLY TRIED ONE OF THESE
         </p>
         <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
           {cards.map(([name, line]) => (

@@ -118,7 +118,7 @@ export function Team() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>Built from experience, <Accent>not textbooks.</Accent></h2>
       <p className={T.lead}>
-        Our entire philosophy is built from years of testing and iterating. You'll get access to a team that's at the frontier of content creation. They're absolute monsters at creating content that gets you paid. The creative director, the short form specialist, the funnel expert, the entire crew that's behind 8 figures in client results and over 20B+ views, all are on the board.
+        Our entire philosophy is built from years of testing and iterating, it didn't just appear overnight.{" \n\n\n"}The founder, the creative director, the short form specialist, the funnel expert, the entire crew that's behind 8 figures in client results and over 20B+ views, all are on your board.
       </p>
       <div className="mt-10 grid grid-cols-1 items-center gap-8 rounded-xl border border-line bg-card p-6 sm:p-8 md:grid-cols-[240px_1fr]">
         {aboutPhoto ? (
@@ -129,8 +129,8 @@ export function Team() {
         <div>
           <div className="space-y-4 text-base leading-relaxed text-foreground">
             <p>"For years we've helped many businesses in various industries succeed on social media by taking over their content department. However once the partnership ended, the content systems always fell apart.</p>
-            <p>To help even more founders and their teams, we created YRT Creative Board, a advisory program where businesses get shown how to fish instead of just being given the result.</p>
-            <p>We help you and your people build the system and train up your team to become just as good or even better as we are."</p>
+            <p>{"\n"}</p>
+            <p>{"\n"}</p>
           </div>
           <p className="mt-6 font-serif text-2xl italic text-accent">Jordan Chen, Founder</p>
         </div>
