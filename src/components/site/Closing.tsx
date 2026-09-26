@@ -8,7 +8,7 @@ import { T } from "./typography";
 
 
 const yes = [
-  "You run an agency or an expert-led business (courses, coaching, consulting) doing $20k+/month.",
+  "You run an expert-led business (agency, courses, coaching, consulting) doing $20k+/month.",
   "You have an offer worth $2k+ per client (can also be a back-end offer).",
   "You have real results and experience to talk about.",
   "You actually care about the people you sell to.",
