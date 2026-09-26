@@ -11,7 +11,7 @@ import { HowItWorks } from "@/components/site/Method";
 import { WhatYouGet } from "@/components/site/WhatYouGet";
 import { Honesty } from "@/components/site/Proof";
 import { OneVideo } from "@/components/site/OneVideo";
-import { Apply, Faq, FinalCta, Footer } from "@/components/site/Closing";
+import { Apply, Faq, Footer } from "@/components/site/Closing";
 
 const TITLE = "YRT Creative Board | Likes ain't buys";
 const DESC = "A creative advisory for established online businesses. Turn your expertise into content that brings in buyers.";
@@ -53,7 +53,6 @@ function Index() {
         <Honesty />
         <Apply />
         <Faq />
-        <FinalCta />
       </main>
       <Footer />
       <MobileBar />
