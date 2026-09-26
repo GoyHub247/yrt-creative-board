@@ -9,7 +9,7 @@ import { Hero } from "@/components/site/Hero";
 import { Why } from "@/components/site/Story";
 import { HowItWorks } from "@/components/site/Method";
 import { WhatYouGet } from "@/components/site/WhatYouGet";
-import { CaseStudies, Receipts, Team } from "@/components/site/Proof";
+import { CaseStudies, Receipts } from "@/components/site/Proof";
 import { OneVideo } from "@/components/site/OneVideo";
 import { Apply, Faq, FinalCta, Footer } from "@/components/site/Closing";
 
@@ -52,7 +52,6 @@ function Index() {
         <CaseStudies />
         <Receipts />
         <WhatYouGet />
-        <Team />
         <Apply />
         <Faq />
         <FinalCta />
