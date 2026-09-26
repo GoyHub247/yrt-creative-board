@@ -4,7 +4,7 @@ import { T } from "./typography";
 
 const paragraphs = [
   "We've watched our clients' accounts go from 3,000 to 100,000 followers overnight, with more leads than the founder could ever imagine.",
-  "The first Catalyst Banger™ completely changes the trajectory of your business. It's the beginning of faster tests, more conversions and way harder scaling.",
+  "The first Catalyst Banger™ completely changes the trajectory of your business. It's the beginning of faster tests, more conversions and way faster scaling.",
 ];
 
 export function OneVideo() {
