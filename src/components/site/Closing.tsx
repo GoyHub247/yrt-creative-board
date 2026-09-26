@@ -23,7 +23,7 @@ const no = [
 const steps = [
   `DM '${site.dmKeyword}' to @${site.instagramHandle} on Instagram.`,
   "Answer a short questionnaire so we can check it's a fit. We reply within 24–48 hours.",
-  "If it's a fit, you get your offer doc with the full breakdown, pricing and payment link, and you start within 7 days of paying.",
+  "If it's a fit, you get your offer doc with the full breakdown, pricing and payment link, and you start onboarding immediately.",
 ];
 
 export function Apply() {
