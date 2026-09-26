@@ -1,12 +1,10 @@
 import { Accent } from "./AccentText";
 import { T } from "./typography";
-import { DMButton } from "@/components/site/DMButton";
 
 
 const paragraphs = [
   "We've watched our clients' accounts go from 3,000 to 100,000 followers overnight, with more leads than the founder could ever imagine.",
   "The first Catalyst Banger™ completely changes the trajectory of your business. It's the beginning of faster tests, more conversions and way harder scaling.",
-  "\n",
 ];
 
 export function OneVideo() {
@@ -86,9 +84,6 @@ export function OneVideo() {
         </div>
       </div>
 
-      <div className="mt-12 flex justify-center">
-        <DMButton size="lg" />
-      </div>
     </div>
     </section>
   );

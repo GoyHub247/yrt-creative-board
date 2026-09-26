@@ -1,0 +1,3 @@
+- [x] Simplify hero, method, and one-video sections as requested.
+- [x] Replace case-study cards with lazy video tiles and mobile swipe indicators.
+- [x] Verify desktop and mobile presentation and interactions.
