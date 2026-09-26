@@ -50,7 +50,7 @@ export function Hero() {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
             {figures.map((figure) => (
               <div key={figure.value} className="text-center">
-                <div className={`${T.figure} text-foreground`}>{figure.value}</div>
+                <div className={`${T.figure} font-bold text-foreground`}>{figure.value}</div>
                 <div className={`mt-1 ${T.small}`}>{figure.label}</div>
               </div>
             ))}
