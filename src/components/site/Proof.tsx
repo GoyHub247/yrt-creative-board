@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Accent } from "@/components/site/AccentText";
 import { caseStudies, type CaseStudy } from "@/data/caseStudies";
 import { receipts, aboutPhoto, type Receipt } from "@/data/receipts";
+import { Button } from "@/components/ui/button";
 import { T } from "./typography";
 
 const Placeholder = ({ label, className = "" }: { label: string; className?: string }) => (
@@ -10,54 +11,104 @@ const Placeholder = ({ label, className = "" }: { label: string; className?: str
   </div>
 );
 
-function CaseCard({ c }: { c: CaseStudy }) {
-  const [open, setOpen] = useState(false);
+function VideoTile({ c, visible }: { c: CaseStudy; visible: boolean }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(false);
+
+  const play = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = false;
+    video.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+  };
+
   return (
-    <div className="flex flex-col rounded-xl border border-line bg-card p-6">
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-muted-foreground">{c.tag}</span>
-        {c.verified && (
-          <span className="rounded-full border border-accent px-3 py-1 text-xs font-medium text-accent">Verified</span>
-        )}
-      </div>
-      {c.handle && <div className="mt-3 text-sm text-muted-foreground">{c.handle}</div>}
-      <h3 className={`mt-3 ${T.cardTitle}`}>{c.headline}</h3>
-      {c.beforeAfter && <p className="mt-3 font-medium text-foreground">{c.beforeAfter}</p>}
-      {c.timeline && <p className="mt-1 text-sm text-muted-foreground">{c.timeline}</p>}
-      {c.how && <p className="mt-4 font-serif text-lg italic text-accent">{c.how}</p>}
-      <div className="mt-5">
-        {c.proofImage ? (
-          <img src={c.proofImage} alt={`Proof for ${c.headline}`} loading="lazy" className="w-full rounded-lg border border-line" />
+    <article className="min-w-0 shrink-0 snap-start basis-full md:basis-auto">
+      <div className="relative aspect-video overflow-hidden rounded-lg border border-line bg-card">
+        {c.videoUrl ? (
+          visible && <>
+            <video
+              ref={videoRef}
+              src={c.videoUrl}
+              preload="auto"
+              playsInline
+              controls={playing}
+              onEnded={() => setPlaying(false)}
+              className="h-full w-full object-cover"
+              aria-label={c.headline}
+            />
+            {!playing && <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              onClick={play}
+              aria-label={`Play video: ${c.headline}`}
+              className="absolute inset-0 m-auto size-14 rounded-full bg-foreground/85 text-background hover:bg-foreground hover:text-background"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" /></svg>
+            </Button>}
+          </>
         ) : (
-          <Placeholder label="[Proof image]" className="aspect-[4/3]" />
+          <div className="flex h-full items-center justify-center font-serif text-2xl text-muted-foreground">
+            Video coming soon
+          </div>
         )}
       </div>
-      <div className="mt-auto pt-5">
-        <button
-          type="button"
-          onClick={() => setOpen((o) => !o)}
-          aria-expanded={open}
-          className="text-sm font-medium text-foreground underline underline-offset-4"
-        >
-          {open ? "Hide breakdown" : "See breakdown"}
-        </button>
-        {open && (
-          <p className={`mt-3 ${T.body} text-muted-foreground`}>{c.breakdown ?? "[Breakdown — to add]"}</p>
-        )}
-      </div>
-    </div>
+      <p className={`mt-5 ${T.label}`}>{c.tag}</p>
+      <h3 className={`mt-2 ${T.cardTitle}`}>{c.headline}</h3>
+    </article>
   );
 }
 
 export function CaseStudies() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        observer.disconnect();
+      }
+    }, { threshold: 0.1 });
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  const onScroll = () => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+    const step = carousel.clientWidth + 24;
+    setActiveIndex(Math.min(caseStudies.length - 1, Math.round(carousel.scrollLeft / step)));
+  };
+
   return (
-    <section id="case-studies" className="bg-secondary">
+    <section ref={sectionRef} id="case-studies" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>
         Different industries. <Accent>Same playbook.</Accent>
       </h2>
-      <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-        {caseStudies.map((c, i) => <CaseCard key={i} c={c} />)}
+      <div ref={carouselRef} onScroll={onScroll} className="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth md:grid md:grid-cols-3 md:overflow-visible">
+        {caseStudies.map((c) => <VideoTile key={c.tag} c={c} visible={visible} />)}
+      </div>
+      <div className="mt-6 flex justify-center gap-3 md:hidden" aria-label="Video selection">
+        {caseStudies.map((c, i) => <Button
+          key={c.tag}
+          type="button"
+          variant="ghost"
+          size="icon"
+          aria-label={`Show video ${i + 1}`}
+          aria-current={activeIndex === i ? "true" : undefined}
+          onClick={() => {
+            const carousel = carouselRef.current;
+            if (carousel) carousel.scrollTo({ left: i * (carousel.clientWidth + 24), behavior: "smooth" });
+          }}
+          className="size-8 rounded-full p-0 hover:bg-transparent"
+        ><span className={`block size-2 rounded-full ${activeIndex === i ? "bg-accent" : "bg-muted-foreground/40"}`} /></Button>)}
       </div>
       <p className="mt-8 text-center text-sm text-muted-foreground">
         Results from profiles our team built. Not typical; see the earnings disclaimer.
