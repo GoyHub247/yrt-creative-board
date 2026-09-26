@@ -43,7 +43,7 @@ export function Hero() {
         </div>
 
         <p className={`mt-5 max-w-reading ${T.small}`}>
-          {site.totalSeats} founding seats. Every application is personally reviewed by Jordan.
+          {site.totalSeats} beta seats. Every application is personally reviewed by Jordan.
         </p>
 
         <div className="mt-10 w-full border-t border-line pt-8 sm:mt-12">
