@@ -10,12 +10,12 @@ import { T } from "./typography";
 const yes = [
   "You run an agency or an expert-led business (courses, coaching, consulting) doing $20k+/month.",
   "You have an offer worth $2k+ per client (can also be a back-end offer).",
-  "You have real results and case studies to talk about.",
+  "You have real results and experience to talk about.",
   "You actually care about the people you sell to.",
   "You're willing to play the long game.",
 ];
 const no = [
-  "You're just starting out or don't have case studies yet. Build those first.",
+  "You're just starting out or not at $20k/month yet. Get the experience first, then come back.",
   "You want to make content to show off rather than make an impact.",
   "You want an agency to make it all for you.",
 ];
