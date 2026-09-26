@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep case-study video URLs with their copy in `src/data/caseStudies.ts` and mount players only after the section enters view, so future videos do not load before visitors reach them.
