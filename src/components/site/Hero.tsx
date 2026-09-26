@@ -14,15 +14,15 @@ export function Hero() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <div className="flex flex-col items-center text-center">
         <p className={T.label}>
-          YRT Creative Board · For agencies and expert-led businesses doing $20k+/month
+          YRT Creative Board · For expert-led businesses doing $20k+/month
         </p>
 
         <h1 className={`mt-6 max-w-4xl ${T.display} leading-[1.08] sm:leading-[0.95]`}>
-          Turn your personal brand into an <Accent>Evergreen Client Engine.</Accent>
+          Build a personal brand that <Accent>converts.</Accent>
         </h1>
 
         <p className="mt-7 max-w-reading text-lg leading-relaxed text-muted-foreground">
-          Build a well-oiled organic content machine that brings you inbound leads every day, so you can stop cold outreach and stop paying to acquire every client.
+          Guided by our team, built by you: an organic content machine that brings in inbound leads every day, so you can stop cold outreach and stop paying to acquire every client.
         </p>
 
         <div data-hero-ctas className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:items-center">
