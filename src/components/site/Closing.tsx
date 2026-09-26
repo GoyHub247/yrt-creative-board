@@ -9,9 +9,8 @@ import { T } from "./typography";
 
 const yes = [
   "You run an agency or an expert-led business (courses, coaching, consulting) doing $20k+/month.",
-  "Your have an offer worth $2k+ per client (can also be a back-end offer).",
+  "You have an offer worth $2k+ per client (can also be a back-end offer).",
   "You have real results and case studies to talk about.",
-  "You'd rather fix the video than blame the algorithm.",
   "You actually care about the people you sell to.",
   "You're willing to play the long game.",
 ];
@@ -19,19 +18,17 @@ const no = [
   "You're just starting out or don't have case studies yet. Build those first.",
   "You want to make content to show off rather than make an impact.",
   "You want an agency to make it all for you.",
-  "You're looking for a shortcut.",
 ];
 
 const steps = [
   `DM '${site.dmKeyword}' to @${site.instagramHandle} on Instagram.`,
-  "You'll be prompted with a small questionnaire to filter out unqualified founders.",
-  "If it's a fit, you get an offer doc sent including the full breakdown of the process, pricing, payment link, next steps, etc.",
-  "Once paid, you'll start within 7 days.",
+  "Answer a short questionnaire so we can check it's a fit. We reply within 24–48 hours.",
+  "If it's a fit, you get your offer doc with the full breakdown, pricing and payment link, and you start within 7 days of paying.",
 ];
 
 export function Apply() {
   return (
-    <section id="apply" className="bg-background">
+    <section id="apply" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
         <h2 className={T.sectionTitle}>Is this <Accent>for you?</Accent></h2>
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -65,13 +62,9 @@ export function Apply() {
         <p className="mt-4 text-center text-xs text-muted-foreground">
           Revenue from everything we help you with counts. Full terms come with your offer.
         </p>
-        <p className="mt-8 text-center text-sm text-muted-foreground">
-          {"\n"}
-        </p>
-        <div className="mt-6 flex justify-center"><DMButton size="lg" /></div>
 
         <p className={`mt-16 ${T.label}`}>How to apply</p>
-        <ol className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-4">
+        <ol className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-3">
           {steps.map((s, i) => (
             <li key={i} className="border-t border-line pt-5">
               <div className="font-serif text-3xl text-accent">{i + 1}</div>
@@ -86,18 +79,16 @@ export function Apply() {
 }
 
 const faqs = [
-  ["Is this a course?", "No. We direct your actual content: we plan it with you, review it and tell you what to change. There's training too, unlocked by phase, but it's the smallest part."],
-  ["Is it done-for-you?", "No. We advise; you and your team execute. In Phase 3 we help you build the team that runs it, so you don't have to."],
-  ["Who will I work with?", "Our whole team: Jordan, our creative director, short-form specialist and funnel specialist."],
-  ["How much time will it take?", "More at the start while we build the foundation. The goal is a couple of hours a week once your team runs it, and filming can be batched weekly or monthly."],
-  ["I have no audience yet. Will it work?", "Yes. A fresh account is slower than one with a small following, but the view jail isn't real. If you're stuck under 5,000 views, the content just isn't good enough yet."],
-  ["Which platforms?", "Short-form video first. Long-form YouTube is coming."],
-  ["What does it cost?", "Pricing comes with your personal offer, after Jordan reviews your DM."],
+  ["Is it done-for-you?", "No. We advise; you and your team execute. Over time we help you build the team that runs it, so you don't have to."],
+  ["Is this a course?", "No. We plan the content with you, review it and tell you what to change. There are video trainings for you and your team, unlocked step by step, but it's only a small part."],
+  ["How much time will it take?", "More at the start while we build the foundation. The goal is a couple of hours a month once your team runs it, and filming can be batched weekly or monthly."],
+  ["I have no audience yet. Will it work?", "All the greatest founders with personal brands started out with zero followers. A fresh account is slower than one with a small following, but the view jail isn't real. If you're stuck under 5,000 views, the content just isn't good enough yet."],
+  ["What does it cost?", "Pricing gets sent in your offer doc, after we review your application."],
 ];
 
 export function Faq() {
   return (
-    <section id="faq" className="bg-secondary">
+    <section id="faq" className="bg-background">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>What founders ask <Accent>before they DM.</Accent></h2>
       <Accordion type="single" collapsible className="mx-auto mt-12 max-w-reading">
