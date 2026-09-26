@@ -61,8 +61,9 @@ export function OneVideo() {
               <circle cx="168" cy="70" r="5" fill="var(--accent)" />
               {/* Label */}
               <text
-                x="176"
-                y="64"
+                x="158"
+                y="74"
+                textAnchor="end"
                 className="font-serif"
                 fontSize="13"
                 fill="var(--accent)"

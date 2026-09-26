@@ -25,7 +25,7 @@ export function Hero() {
           Build a well-oiled organic content machine that brings you inbound leads every day, so you can stop cold outreach and stop paying to acquire every client.
         </p>
 
-        <div className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:items-center">
+        <div data-hero-ctas className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:items-center">
           <DMButton size="lg" />
           <a
             href="#how-it-works"
