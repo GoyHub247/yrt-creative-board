@@ -14,7 +14,7 @@ export function Hero() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <div className="flex flex-col items-center text-center">
         <p className={T.label}>
-          YRT Creative Board · For founders doing $20k+/month
+          YRT Creative Board · For agencies and expert-led businesses doing $20k+/month
         </p>
 
         <h1 className={`mt-6 max-w-4xl ${T.display} leading-[1.08] sm:leading-[0.95]`}>
