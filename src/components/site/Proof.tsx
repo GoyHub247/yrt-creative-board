@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Accent } from "@/components/site/AccentText";
 import { caseStudies, type CaseStudy } from "@/data/caseStudies";
-import { receipts, aboutPhoto, type Receipt } from "@/data/receipts";
+import { receipts, type Receipt } from "@/data/receipts";
 import { Button } from "@/components/ui/button";
 import { T } from "./typography";
 
@@ -159,34 +159,6 @@ export function Receipts() {
           <img src={active.image} alt={active.caption ?? "Client result screenshot"} className="max-h-[90vh] max-w-full rounded-lg" />
         </div>
       )}
-    </section>
-  );
-}
-
-export function Team() {
-  return (
-    <section id="team" className="bg-secondary">
-      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
-      <h2 className={T.sectionTitle}>Built from experience, <Accent>not textbooks.</Accent></h2>
-      <p className={T.lead}>
-        Our entire philosophy is built from years of testing and iterating, it didn't just appear overnight.
-      </p>
-      <div className="mt-10 grid grid-cols-1 items-center gap-8 rounded-xl border border-line bg-card p-6 sm:p-8 md:grid-cols-[240px_1fr]">
-        {aboutPhoto ? (
-          <img src={aboutPhoto} alt="Jordan Chen, founder of YRT Institute" loading="lazy" className="aspect-[4/5] w-full max-w-[240px] rounded-xl object-cover" />
-        ) : (
-          <Placeholder label="[Photo of Jordan]" className="aspect-[4/5] w-full max-w-[240px] !bg-card" />
-        )}
-        <div>
-          <div className="space-y-4 text-base leading-relaxed text-foreground">
-            <p>"Our entire philosophy is built from years of testing and iterating. Everything "</p>
-            <p>{"\n"}</p>
-            <p>{"\n"}</p>
-          </div>
-          <p className="mt-6 font-serif text-2xl italic text-accent">Jordan Chen, Founder</p>
-        </div>
-      </div>
-    </div>
     </section>
   );
 }

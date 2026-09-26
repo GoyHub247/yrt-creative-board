@@ -18,11 +18,6 @@ const playbooks = [
   ["People & Systems", "Leverage", "Hiring, training and managing the team that runs the engine so you can just be the face, not the operator."],
 ];
 
-const extras = [
-  "Templates and software we use in our own company to stay at the frontier of short form content.",
-  "You can join together with your team so they can be trained from day.",
-  "Direct access to the team behind 8 figures in client results.",
-];
 
 export function WhatYouGet() {
   return (
@@ -48,18 +43,14 @@ export function WhatYouGet() {
       <div className="mt-16">
         <h3 className={`text-center ${T.subTitle}`}>The playbooks</h3>
         <p className="mx-auto mt-3 max-w-reading text-center text-muted-foreground">
-          Training unlocks by phase, so you and your team are never overwhelmed.
+          Training unlocks step by step, so you and your team are never overwhelmed.
         </p>
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {playbooks.map(([name, phase, line]) => (
-            <div key={name} className="rounded-xl border border-line bg-card p-5">
-              <span className="inline-block rounded-full border border-line px-2.5 py-0.5 text-xs text-accent">{phase}</span>
-              <h4 className={`mt-3 ${T.cardTitle}`}>{name}</h4>
-              <p className={`mt-2 ${T.body} text-muted-foreground`}>{line}</p>
-            </div>
+        <ul className="mt-8 flex flex-wrap justify-center gap-3">
+          {playbooks.map(([name]) => (
+            <li key={name} className="rounded-full border border-line bg-card px-4 py-2 text-foreground">{name}</li>
           ))}
-        </div>
-      </div>
+        </ul>
+            </div>
     </div>
     </section>
   );
