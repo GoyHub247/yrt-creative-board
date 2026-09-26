@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { seatLabel } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { DMButton } from "./DMButton";
 
@@ -22,7 +21,6 @@ export function MobileBar() {
         show ? "translate-y-0" : "translate-y-full",
       )}
     >
-      <p className="mb-2 text-center text-xs text-muted-foreground">{seatLabel}</p>
       <DMButton size="lg" className="w-full" />
     </div>
   );

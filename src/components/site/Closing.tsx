@@ -82,6 +82,7 @@ const faqs = [
   ["Is it done-for-you?", "No. We advise; you and your team execute. Over time we help you build the team that runs it, so you don't have to."],
   ["Is this a course?", "No. We plan the content with you, review it and tell you what to change. There are video trainings for you and your team, unlocked step by step, but it's only a small part."],
   ["How much time will it take?", "More at the start while we build the foundation. The goal is a couple of hours a month once your team runs it, and filming can be batched weekly or monthly."],
+  ["I'm not comfortable on camera. Does that matter?", "No. Most founders aren't at first. Being confident on camera is a skill, and we train it: how to speak, how to carry your energy, and how to film in batches so it gets easier every session."],
   ["I have no audience yet. Will it work?", "All the greatest founders with personal brands started out with zero followers. A fresh account is slower than one with a small following, but the view jail isn't real. If you're stuck under 5,000 views, the content just isn't good enough yet."],
   ["What does it cost?", "Pricing gets sent in your offer doc, after we review your application."],
 ];
