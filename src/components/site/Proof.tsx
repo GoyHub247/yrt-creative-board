@@ -60,7 +60,7 @@ export function CaseStudies() {
         {caseStudies.map((c, i) => <CaseCard key={i} c={c} />)}
       </div>
       <p className="mt-8 text-center text-sm text-muted-foreground">
-        Results from profiles our team directed. Not typical; see the earnings disclaimer.
+        Results from profiles our team built. Not typical; see the earnings disclaimer.
       </p>
     </div>
     </section>
@@ -118,7 +118,7 @@ export function Team() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>Built from experience, <Accent>not textbooks.</Accent></h2>
       <p className={T.lead}>
-        Our entire philosophy is built from years of testing and iterating, it didn't just appear overnight.{" \n\n\n"}The founder, the creative director, the short form specialist, the funnel expert, the entire crew that's behind 8 figures in client results and over 20B+ views, all are on your board.
+        Our entire philosophy is built from years of testing and iterating, it didn't just appear overnight.
       </p>
       <div className="mt-10 grid grid-cols-1 items-center gap-8 rounded-xl border border-line bg-card p-6 sm:p-8 md:grid-cols-[240px_1fr]">
         {aboutPhoto ? (

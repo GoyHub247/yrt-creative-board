@@ -30,7 +30,7 @@ export function WhatYouGet() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>A seat at the table with <Accent>our whole team.</Accent></h2>
       <p className={T.lead}>
-        A board seat isn't access to one person. It's access to the team behind 8 figures in client results.
+        A board seat isn't access to one person. It's access to the team behind 8 figures in client results. The founder, creative director, short form specialist, funnel expert, all on your board.
       </p>
 
       <dl className="mx-auto mt-12 max-w-3xl divide-y divide-line border-y border-line">
