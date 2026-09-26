@@ -5,6 +5,29 @@ import { receipts, type Receipt } from "@/data/receipts";
 import { Button } from "@/components/ui/button";
 import { T } from "./typography";
 
+const honestyParagraphs = [
+  "Our agency clients pay us to stay invisible. It's written into every contract.",
+  "We could fill this page with results and testimonials with blurred names and faces. But that would only make you more skeptical, and you'd be right to be.",
+  "This is our first founding cohort for our advisory company. Their results go up here, with names and handles, after 90 days. Until then, judge us by our content and our guarantee.",
+];
+
+export function Honesty() {
+  return (
+    <section id="proof" className="bg-secondary">
+      <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
+        <h2 className={T.sectionTitle}>
+          Why there are no testimonials <Accent>here (yet).</Accent>
+        </h2>
+        <div className="mx-auto mt-10 flex max-w-reading flex-col gap-6 text-center text-base leading-relaxed text-muted-foreground">
+          {honestyParagraphs.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 const Placeholder = ({ label, className = "" }: { label: string; className?: string }) => (
   <div className={`flex items-center justify-center rounded-lg border border-dashed border-border bg-secondary text-sm text-muted-foreground ${className}`}>
     {label}
