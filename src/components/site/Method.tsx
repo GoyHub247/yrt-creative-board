@@ -24,7 +24,7 @@ export function HowItWorks() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>How the Creative Board <Accent>works.</Accent></h2>
       <p className={T.lead}>
-        Everything a modern digital founder needs to scale his socials and build a cult-like brand.
+        Everything a founder needs to scale his socials and build a cult-like brand.
       </p>
 
       <div className="mx-auto mt-12 max-w-4xl">

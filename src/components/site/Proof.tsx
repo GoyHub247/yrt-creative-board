@@ -128,7 +128,7 @@ export function Team() {
         )}
         <div>
           <div className="space-y-4 text-base leading-relaxed text-foreground">
-            <p>"For years we've helped many businesses in various industries succeed on social media by taking over their content department. However once the partnership ended, the content systems always fell apart. We created the YRT Creative Board to teach founders and their teams how to fish instead of solely delivering them results. This way we can have a greater impact on the amount of businesses we can work with and the amount of people we can help."</p>
+            <p>"Our entire philosophy is built from years of testing and iterating. Everything "</p>
             <p>{"\n"}</p>
             <p>{"\n"}</p>
           </div>
