@@ -15,7 +15,7 @@ export function Hero() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <div className="flex flex-col items-center text-center">
         <p className={T.label}>
-          YRT Creative Board · For founders doing at minimum $20k+/month
+          YRT Creative Board · For founders doing $20k+/month
         </p>
 
         <h1 className={`mt-6 max-w-4xl ${T.display} leading-[1.08] sm:leading-[0.95]`}>
@@ -42,10 +42,6 @@ export function Hero() {
           </a>
         </div>
 
-        <p className={`mt-5 max-w-reading ${T.small}`}>
-          {site.totalSeats} beta seats. Every application is personally reviewed by Jordan.
-        </p>
-
         <div className="mt-10 w-full border-t border-line pt-8 sm:mt-12">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
             {figures.map((figure) => (
@@ -56,7 +52,7 @@ export function Hero() {
             ))}
           </div>
           <p className="mt-7 text-center text-sm text-muted-foreground">
-            Views and likes are the numbers we care about the least. It's a side effect. We optimise for buyers.
+            Views and likes are the numbers we care about the least. They're a side effect. We optimise for buyers.
           </p>
         </div>
       </div>

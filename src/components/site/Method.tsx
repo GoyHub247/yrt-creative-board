@@ -4,12 +4,6 @@ import { VideoPlayer } from "@/components/site/VideoPlayer";
 import { T } from "./typography";
 
 
-const phases = [
-  { n: 1, name: "Foundation", title: "Build the engine.", what: "This phase is all about strategy, positioning and setting up the foundation to scale.", move: "You have a clear foundation with a great strategy and your first clients from socials." },
-  { n: 2, name: "Inbound", title: "Start it up.", what: "We find your format and filming schedule, and the leads start flooding in.", move: "New leads arrive from social every day, the aim by day 90." },
-  { n: 3, name: "Leverage", title: "Hand over the keys.", what: "Your team runs and maintains the engine. You're the face, not the mechanic.", move: "It only takes you a couple of hours a month to create all your content." },
-];
-
 const outcomes = [
   "Inbound leads in your DMs every day",
   "No cold outreach, no ads",
@@ -24,31 +18,16 @@ export function HowItWorks() {
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>How the Creative Board <Accent>works.</Accent></h2>
       <p className={T.lead}>
-        Everything a founder needs to scale his socials and build a cult-like brand.
+        Everything a founder needs to scale their socials and build a cult-like brand.
       </p>
 
       <div className="mx-auto mt-12 max-w-4xl">
         <VideoPlayer />
       </div>
 
-      <div className="relative mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
-        <div aria-hidden className="absolute left-8 top-0 bottom-0 w-px bg-border md:left-0 md:right-0 md:top-10 md:bottom-auto md:h-px md:w-auto" />
-        {phases.map((p) => (
-          <div key={p.n} className="relative flex flex-col rounded-xl border border-line bg-card p-6">
-            <div className="flex items-baseline gap-3">
-              <span className="font-serif text-3xl text-accent">{p.n}</span>
-              <h3 className={T.cardTitle}>{p.name}</h3>
-            </div>
-            <p className="mt-3 font-medium text-foreground">{p.title}</p>
-            <div className={`mt-5 ${T.label}`}>What happens</div>
-            <p className="mt-2 leading-relaxed text-foreground">{p.what}</p>
-            <div className="mt-6 rounded-lg bg-secondary p-4">
-              <div className={T.label}>You move on when</div>
-              <p className={`mt-2 ${T.body} text-foreground`}>{p.move}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      <p className={T.lead}>
+        First clients from social possible within 30 days. Leads every day by day 90. After that, a couple of hours a month of your time, with your team running it.
+      </p>
 
       <div className="mt-10 rounded-xl border border-line border-l-[3px] border-l-accent bg-card p-6 sm:p-8">
         <h3 className={T.subTitle}>
