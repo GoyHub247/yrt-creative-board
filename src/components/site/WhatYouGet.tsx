@@ -21,7 +21,7 @@ const playbooks = [
 
 export function WhatYouGet() {
   return (
-    <section id="what-you-get" className="bg-background">
+    <section id="what-you-get" className="bg-secondary">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
       <h2 className={T.sectionTitle}>A seat at the table with <Accent>our whole team.</Accent></h2>
       <p className={T.lead}>
